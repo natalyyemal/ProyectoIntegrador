@@ -29,7 +29,9 @@ h2{
 }
 .banner{
     display: block;
-    width: 100%;
+    width: 95%;
+    margin: 40px;
+    background-color: black;
 }
 .top-tracks{
     display: block;
