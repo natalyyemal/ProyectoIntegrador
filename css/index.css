@@ -6,12 +6,15 @@
     grid-template-columns: 2fr 1fr 1fr 1fr;
     background-color: lightskyblue;
 }
+h2{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px 0px;
+}
 .articulo{
     text-align: justify;
     margin-top: 30px;
-}
-body{
-    background-color: black;
 }
 .logo{
     align-items: initial;
@@ -23,7 +26,6 @@ body{
 .banner{
     display: block;
     width: 100%;
-    grid-template-rows: 1fr;
 }
 .top-tracks{
     display: block;
@@ -41,21 +43,26 @@ li{
     display: block;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    padding: 10px;
+    padding: 10px 0px;
     color: white;
-    padding-bottom: 20px;
     width: 100%;
 }
-.todos-productos{
+.todos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 10px;
     padding: 10px;
 }
-.titulo1{
-    border: 3px solid blue;
-    background-color:
+footer .tracks{
+    width: 95%;
 }
-.artistas{
-    border: 4px solid red;
+.tracks li{
+    background-color: black;
+    margin-bottom: 5px;
+    color: white;
+    
+}
+.tracks a{
+    color:white;
+    text-decoration: none;
 }
