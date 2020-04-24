@@ -1,27 +1,31 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-image: url(../img/fotofondo.jpg);
+    font-family:'Comfortaa', cursive;
+}
 .grid-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr;
-    background-color: lightskyblue;
+    display: grid;    
+    grid-template-columns: 1.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    background-color: black;
+    text-align: right;
 }
 h2{
     color: white;
     background-color: black;
     text-align: center;
     padding: 15px 0px;
-}
-.articulo{
-    text-align: justify;
-    margin-top: 30px;
+    border-radius: 20px;
 }
 .logo{
     align-items: initial;
     border-radius: 70px;
 }
 .titulos{
-    margin-top: 30px;
+    margin: auto;
+    color: white;
+    text-decoration: none;
 }
 .banner{
     display: block;
@@ -46,6 +50,7 @@ li{
     padding: 10px 0px;
     color: white;
     width: 100%;
+    box-shadow: grey 2px 2px 2px;
 }
 .todos{
     display: grid;
@@ -60,6 +65,7 @@ footer .tracks{
     background-color: black;
     margin-bottom: 5px;
     color: white;
+    border-radius: 20px;
     
 }
 .tracks a{
