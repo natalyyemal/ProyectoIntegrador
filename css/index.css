@@ -77,3 +77,11 @@ footer .tracks{
 .content-search{
     margin-left: 90px;
 }
+@media (max-width: 320px){
+    .todos {
+        grid-template-columns: none;
+        display: grid;
+        text-align: center;
+        margin-left: 110px;
+    }
+}
