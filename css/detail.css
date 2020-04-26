@@ -9,9 +9,6 @@ body{
     background-color: black;
     text-align: right;
 }
-ul{
-    display: none;
-}
 .grid-container ul{
     display: grid;
     list-style: none;
