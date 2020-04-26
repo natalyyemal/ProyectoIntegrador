@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(21, 9, 32, 0.712);
+    background-color: rgb(13, 8, 17);
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
@@ -17,7 +17,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .grid-container li{
-    padding: 10px;
+    padding: 30px;
     margin: auto;
     width: 100%;
 }

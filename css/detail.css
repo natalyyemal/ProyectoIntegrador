@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(21, 9, 32, 0.712);
+    background-color: rgb(13, 8, 17);
     font-family:'Comfortaa', cursive;}
 .grid-container{
     display: grid;    
