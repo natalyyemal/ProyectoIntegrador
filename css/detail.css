@@ -19,6 +19,13 @@ body{
     margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
+.foto-albumes{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.albumes{
+    width: 10px;
+}
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
     position: relative;
@@ -27,7 +34,7 @@ ul .descripcion{
     list-style: none;
     width: 400px;
     padding: 40px;
-    border-radius: 40px;
+    border-radius: 40px; 
 }
 .populares{
     font-size: 40px;
@@ -51,6 +58,7 @@ ul .descripcion{
     width: 180px;
     float: left;
     margin-right: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .nombre-after-hours{
     color: white;
@@ -61,7 +69,8 @@ ul .descripcion{
 .after-hrs{
     display: grid;
     list-style: none;
-    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     margin-left: none;
 }
