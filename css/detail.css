@@ -5,9 +5,34 @@ body{
     background-color: rgba(41, 22, 41, 0.808);
     font-family:Arial, Helvetica, sans-serif;
 }
+.grid-container{
+    display: grid;    
+    background-color: black;
+    text-align: right;
+}
+.grid-container ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-container li{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+.logo{
+    align-items: initial;
+    border-radius: 70px;
+}
+.titulos{
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
 .titulo{
     color: white;
     position: relative;
+    display: flex;
     top: 170px;
     right: -50px;
     font-size: 65px;
@@ -21,10 +46,10 @@ body{
 }
 .foto-albumes{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .albumes{
-    width: 40px;
+    width: 30px;
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
@@ -41,14 +66,14 @@ ul .descripcion{
     color: white;
     margin-right: 20px;
 }
-.grid-container .popular-song{
+.container .popular-song{
     display: grid;
     list-style: none;
     grid-template-rows: 50px 50px 50px 50px 50px;
     gap: 10px;
     margin-left: none;
 }
-.grid-container li{
+.container li{
     background-color: black;
     color: white;
     border-radius: 10px;
