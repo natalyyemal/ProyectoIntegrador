@@ -17,7 +17,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .grid-container li{
-    padding: 30px;
+    padding: 10px;
     margin: auto;
     width: 100%;
 }
