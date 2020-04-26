@@ -1,6 +1,25 @@
+*{
+    box-sizing: border-box;
+}
 body{
     background-image: url(../img/fotofondo.jpg);
+    background-color: #000046;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.titulo{
+    color: white;
 }
 .weeknd{
-    width: 90%;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul .descripcion{
+    background-color: rgba(242, 234, 232, 0.5);
+    position: relative;
+    left: 70%;
+    bottom: 500px;
+    list-style: none;
+    width: 400px;
 }
