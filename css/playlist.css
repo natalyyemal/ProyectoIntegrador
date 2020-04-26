@@ -1,3 +1,49 @@
 body{
-    background-color: blue;
+    background-color: rgb(13, 8, 17);
+    background-repeat: no-repeat;
+    font-family:'Comfortaa', cursive;
+}
+.grid-container{
+    display: grid;    
+    background-color: black;
+    text-align: right;
+}
+.grid-container ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid-container li{
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+.logo{
+    align-items: initial;
+    border-radius: 70px;
+}
+.titulos{
+    margin: auto;
+    color: white;
+    text-decoration: none;
+}
+.playlist{
+    color: white;
+}
+.img-playlist{
+    padding: 5px;
+    width: 65%;
+    height: 80px;
+    align-content: left;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    line-height: 90%;
+    justify-content: right;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+    align-content: center;
+    padding: 10px;
+    width: 90%;
+    height: 50px;
+    border: 3px solid white; 
 }
