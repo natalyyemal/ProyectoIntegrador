@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../img/fondo.jpg);
+    background-color: rgba(21, 9, 32, 0.712);
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
