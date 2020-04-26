@@ -21,10 +21,10 @@ body{
 }
 .foto-albumes{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .albumes{
-    width: 10px;
+    width: 40px;
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
