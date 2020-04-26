@@ -2,13 +2,15 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgba(41, 22, 41, 0.808);
-    font-family:Arial, Helvetica, sans-serif;
-}
+    background-image: url(../img/fondo.jpg);
+    font-family:'Comfortaa', cursive;}
 .grid-container{
     display: grid;    
     background-color: black;
     text-align: right;
+}
+ul{
+    display: none;
 }
 .grid-container ul{
     display: grid;
@@ -105,4 +107,9 @@ ul .descripcion{
     border-radius: 10px;
     padding: 18px;
 }
-
+.foto-albumes{
+    margin-top: 25px;
+}
+header{
+    margin-top: 15px;
+}

@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../img/fotofondo.jpg);
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
 .grid-container{
