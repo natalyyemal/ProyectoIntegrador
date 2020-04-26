@@ -43,13 +43,6 @@ body{
     margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
-.foto-albumes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.albumes{
-    width: 30px;
-}
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
     position: relative;
@@ -105,8 +98,13 @@ ul .descripcion{
     padding: 18px;
 }
 .foto-albumes{
-    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.albumes{
+    width: 100%;
 }
 header{
-    margin-top: 15px;
+    margin-top: -80px;
 }
