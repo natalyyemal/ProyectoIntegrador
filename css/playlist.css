@@ -1,11 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(13, 8, 17);
+    background-color: rgba(21, 9, 32, 0.712);    
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
 .grid-container{
     display: grid;    
-    background-color: black;
     text-align: right;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
@@ -13,6 +15,7 @@ body{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
 }
 .grid-container li{
     padding: 10px;
@@ -28,24 +31,24 @@ body{
     color: white;
     text-decoration: none;
 }
-.playlist{
-    color: white;
-    text-align: left;
-    margin: 20px;
-}
-.img-playlist{
-    text-align: left;
-}
-.img-playlist{
-    grid-template-columns: 10px;
-    border: 3px solid white;
+.playlist ul{
     display: grid;
+    list-style: none;
+    grid-template-columns: 5% 40% 25% 25% 5%;
     text-align: left;
     color: white;
-    align-content: left;
 }
-.info-playlist{
+h2{
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.664);
+    padding: 10px;
     color: white;
-    position: relative;
-
+}
+.fotoartista{
+    height: 80%;
+}
+.encabezado{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.555);
+    border-bottom: 1px solid whitesmoke;
 }
