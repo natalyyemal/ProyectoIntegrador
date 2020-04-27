@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(13, 8, 17);
+    background-color: rgba(21, 9, 32, 0.712);
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
@@ -10,6 +10,7 @@ body{
     display: grid;    
     background-color: black;
     text-align: right;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 .grid-container ul{
     display: grid;
@@ -41,9 +42,7 @@ h2{
 }
 .banner{
     display: block;
-    width: 95%;
-    margin: 40px;
-    background-color: black;
+    width: 100%;
 }
 .top-tracks{
     display: block;

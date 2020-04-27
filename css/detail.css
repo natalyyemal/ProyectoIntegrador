@@ -2,12 +2,13 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(13, 8, 17);
+    background-color: rgba(21, 9, 32, 0.712);
     font-family:'Comfortaa', cursive;}
 .grid-container{
     display: grid;    
     background-color: black;
     text-align: right;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 .grid-container ul{
     display: grid;
@@ -35,6 +36,7 @@ body{
     top: 170px;
     right: -50px;
     font-size: 65px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .weeknd{
     width: 100%;
@@ -56,7 +58,8 @@ ul .descripcion{
 .populares{
     font-size: 40px;
     color: white;
-    margin-right: 20px;
+    margin-left: 30px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .container .popular-song{
     display: grid;
@@ -70,11 +73,13 @@ ul .descripcion{
     color: white;
     border-radius: 10px;
     padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
 }
 .album1 .after-hours{
     width: 180px;
     float: left;
     margin-right: 10px;
+    margin-left: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .nombre-after-hours{
@@ -82,6 +87,7 @@ ul .descripcion{
     padding-top: 140px;
     padding-left: 10px;
     font-size: 30px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .after-hrs{
     display: grid;
@@ -96,6 +102,7 @@ ul .descripcion{
     color: white;
     border-radius: 10px;
     padding: 18px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.644);
 }
 .foto-albumes{
     display: grid;
@@ -108,4 +115,25 @@ ul .descripcion{
 }
 header{
     margin-top: -80px;
+}
+@media(max-width: 768px){
+    .grid-container{
+        width: 100%;
+        margin: 20px;
+    }
+    ul .descripcion{
+        display: none;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .weeknd{
+        width: 100%;
+        margin: 20px;
+    }
+    .foto-albumes{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 35px;
+    }
 }
