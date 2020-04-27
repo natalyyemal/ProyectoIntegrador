@@ -55,6 +55,9 @@ h2{
 .p-celu{
     display: none;
 }
+.playlist li{
+    border-bottom: 3px solid rgba(245, 245, 245, 0.144);
+}
 @media(max-width: 768px){
     .p-celu{
         display: none;
@@ -99,7 +102,8 @@ h2{
     .fotoartista{
         height: 100%;
     }
-    .play-celu{
+    .play-celu li{
         margin: 0px;
+        border-bottom: 2px solid rgba(245, 245, 245, 0.445);
     }
 }
