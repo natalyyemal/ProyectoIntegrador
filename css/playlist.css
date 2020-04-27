@@ -30,21 +30,22 @@ body{
 }
 .playlist{
     color: white;
+    text-align: left;
+    margin: 20px;
 }
 .img-playlist{
-    padding: 5px;
-    width: 65%;
-    height: 80px;
-    align-content: left;
-    color: white;
+    text-align: left;
+}
+.img-playlist{
+    grid-template-columns: 10px;
+    border: 3px solid white;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    line-height: 90%;
-    justify-content: right;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-    align-content: center;
-    padding: 10px;
-    width: 90%;
-    height: 50px;
-    border: 3px solid white
+    text-align: left;
+    color: white;
+    align-content: left;
+}
+.info-playlist{
+    color: white;
+    position: relative;
+
 }
