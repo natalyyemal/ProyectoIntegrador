@@ -3,7 +3,9 @@
 }
 body{
     background-color: rgba(21, 9, 32, 0.712);
-    font-family:'Comfortaa', cursive;}
+    font-family:'Comfortaa', cursive;
+    background-repeat: no-repeat;
+}
 .grid-container{
     display: grid;    
     background-color: black;
@@ -54,6 +56,9 @@ ul .descripcion{
     width: 400px;
     padding: 40px;
     border-radius: 40px; 
+}
+.descripcion-no{
+    display: none;
 }
 .populares{
     font-size: 40px;
@@ -122,10 +127,16 @@ header{
         margin: 20px;
     }
     ul .descripcion{
-        display: none;
+        width: 200px;
+        font-size: 10px;
+        bottom: 320px;
+        padding: 15px;
+        padding-top: 50px;
     }
     .titulo{
         font-size: 30px;
+        top: 110px;
+        right: -35px;
     }
     .weeknd{
         width: 100%;
@@ -135,5 +146,41 @@ header{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding-left: 35px;
+    }
+}
+@media (max-width: 320px){
+    .grid-container ul{
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none; 
+        text-align: center; 
+        padding: 0px 0px 0px 0px;
+    }
+    .descripcion{
+        display: none;
+    }  
+    .weeknd{
+        margin-top: 50px;
+    }
+    .titulo{
+        top: 230px;
+        background-color: rgba(163, 160, 148, 0.432);
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        padding: 5px;
+        font-size: 20px;
+    }
+    .foto-albumes{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding-left: 35px;
+    }
+    .after-hrs{
+        display: none;
+    }
+    .after-hours{
+        display: none;
+    }
+    .nombre-after-hours{
+        display: none;
     }
 }
