@@ -32,8 +32,8 @@ h2{
 
 }
 .logo{
-    align-items: initial;
     border-radius: 70px;
+    width: 100%;
 }
 .titulos{
     margin: auto;
@@ -108,7 +108,7 @@ footer .tracks{
     }
     .foto-bandas{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         margin-top: 50px;
         padding: 0px;
         text-align: center;
