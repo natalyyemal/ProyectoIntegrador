@@ -4,12 +4,10 @@
 body{
     background-color: rgba(21, 9, 32, 0.712);
     font-family:'Comfortaa', cursive;
-    background-repeat: no-repeat;
 }
 .grid-container{
     display: grid;    
     background-color: black;
-    text-align: right;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
 .grid-container ul{
@@ -19,7 +17,6 @@ body{
 }
 .grid-container li{
     padding: 10px;
-    margin: auto;
     width: 100%;
 }
 .logo{
@@ -31,6 +28,10 @@ body{
     color: white;
     text-decoration: none;
 }
+header{
+    margin-top: -80px;
+    width: 100%;
+}
 .titulo{
     color: white;
     position: relative;
@@ -39,6 +40,7 @@ body{
     right: -50px;
     font-size: 65px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+    width: 100%;
 }
 .weeknd{
     width: 100%;
@@ -46,6 +48,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+    width: 100%;
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
@@ -56,9 +59,6 @@ ul .descripcion{
     width: 400px;
     padding: 40px;
     border-radius: 40px; 
-}
-.descripcion-no{
-    display: none;
 }
 .populares{
     font-size: 40px;
@@ -86,6 +86,7 @@ ul .descripcion{
     margin-right: 10px;
     margin-left: 30px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+    width: 100px;
 }
 .nombre-after-hours{
     color: white;
@@ -117,9 +118,6 @@ ul .descripcion{
 .albumes{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-}
-header{
-    margin-top: -80px;
 }
 @media(max-width: 768px){
     .grid-container{
