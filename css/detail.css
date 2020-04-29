@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    padding: 0%;
 }
 body{
     background-color: rgba(21, 9, 32, 0.712);
@@ -34,17 +35,18 @@ header{
 }
 .titulo{
     color: white;
-    position: relative;
-    display: flex;
-    top: 170px;
-    right: -50px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
     font-size: 65px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
     width: 100%;
 }
 .weeknd{
     width: 100%;
-    display: block;
+    top: 0px;
+    z-index: 0;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
@@ -52,13 +54,14 @@ header{
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
-    position: relative;
     left: 70%;
     bottom: 500px;
     list-style: none;
     width: 400px;
     padding: 40px;
-    border-radius: 40px; 
+    border-radius: 40px;
+    position: absolute; 
+    z-index: 2;
 }
 .populares{
     font-size: 40px;
@@ -119,11 +122,14 @@ ul .descripcion{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
+<<<<<<< HEAD
+=======
+header{
+    margin-top: -80px;
+    position: relative;
+}
+>>>>>>> 1706772ff2dbfb9db882eb6c49298eed856143ca
 @media(max-width: 768px){
-    .grid-container{
-        width: 100%;
-        margin: 20px;
-    }
     ul .descripcion{
         width: 200px;
         font-size: 10px;
@@ -134,7 +140,6 @@ ul .descripcion{
     .titulo{
         font-size: 30px;
         top: 110px;
-        right: -35px;
     }
     .weeknd{
         width: 100%;
@@ -153,9 +158,6 @@ ul .descripcion{
         text-align: center; 
         padding: 0px 0px 0px 0px;
     }
-    .descripcion{
-        display: none;
-    }  
     .weeknd{
         margin-top: 50px;
     }
