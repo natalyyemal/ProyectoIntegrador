@@ -1,11 +1,13 @@
+*{
+    box-sizing: border-box;
+}
 body{
-    background-color: rgb(13, 8, 17);
+    background-color: rgba(21, 9, 32, 0.712);    
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
 .grid-container{
     display: grid;    
-    background-color: black;
     text-align: right;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
 }
@@ -13,6 +15,7 @@ body{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: black;
 }
 .grid-container li{
     padding: 10px;
@@ -28,23 +31,79 @@ body{
     color: white;
     text-decoration: none;
 }
-.playlist{
+.playlist ul{
+    display: grid;
+    list-style: none;
+    grid-template-columns: 5% 40% 25% 25% 5%;
+    text-align: left;
     color: white;
 }
-.img-playlist{
-    padding: 5px;
-    width: 65%;
-    height: 80px;
-    align-content: left;
-    color: white;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    line-height: 90%;
-    justify-content: right;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-    align-content: center;
+h2{
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.664);
     padding: 10px;
-    width: 90%;
-    height: 50px;
-    border: 3px solid white
+    color: white;
+}
+.fotoartista{
+    height: 80%;
+}
+.encabezado{
+    text-align: left;
+    color: rgba(255, 255, 255, 0.555);
+    border-bottom: 1px solid whitesmoke;
+}
+.p-celu{
+    display: none;
+}
+.playlist li{
+    border-bottom: 3px solid rgba(245, 245, 245, 0.144);
+}
+@media(max-width: 768px){
+    .p-celu{
+        display: none;
+    }
+}
+@media(max-width: 320px){
+    .grid-container ul{
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none; 
+        text-align: center; 
+        padding: 0px 0px 0px 0px;
+    }
+    body{
+        display: grid;
+        width: 100%;
+    }
+    .playlist1{
+        display: none;
+    }
+    .playlist{
+        display: none;
+    }
+    .p-celu{
+        display: grid;
+    }
+    h2{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.473);
+    }
+    .play-celu li{
+        color: white;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    .mobile ul{
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 50px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
+        padding: 10px;
+        gap: 30px;
+    } 
+    .fotoartista{
+        height: 100%;
+    }
+    .play-celu li{
+        margin: 0px;
+        border-bottom: 2px solid rgba(245, 245, 245, 0.445);
+    }
 }
