@@ -6,19 +6,21 @@ body{
     background-color: rgba(21, 9, 32, 0.712);
     font-family:'Comfortaa', cursive;
 }
-.grid-container{
-    display: grid;    
+.grid-container{    
     background-color: black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    padding: 0;
 }
 .grid-container ul{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
 }
 .grid-container li{
-    padding: 10px;
-    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .logo{
     align-items: initial;
@@ -42,6 +44,8 @@ header{
     font-size: 65px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
     width: 100%;
+    top: 35%;
+    left: 2%;
 }
 .weeknd{
     width: 100%;
@@ -51,17 +55,19 @@ header{
     margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
     width: 100%;
+    margin-top: 10%;
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
-    left: 70%;
-    bottom: 500px;
     list-style: none;
     width: 400px;
     padding: 40px;
     border-radius: 40px;
     position: absolute; 
     z-index: 2;
+    left: 70%;
+    top: 80%;
+    padding-top: 5%;
 }
 .populares{
     font-size: 40px;
@@ -122,33 +128,26 @@ ul .descripcion{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
-<<<<<<< HEAD
-=======
-header{
-    margin-top: -80px;
-    position: relative;
-}
->>>>>>> 1706772ff2dbfb9db882eb6c49298eed856143ca
 @media(max-width: 768px){
     ul .descripcion{
-        width: 200px;
+        width: 30%;
         font-size: 10px;
-        bottom: 320px;
         padding: 15px;
         padding-top: 50px;
+        left: 67%;
+        top: 90%;
     }
     .titulo{
         font-size: 30px;
-        top: 110px;
+        top: 45%;
+        left: 3%;
     }
     .weeknd{
         width: 100%;
-        margin: 20px;
     }
     .foto-albumes{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        padding-left: 35px;
     }
 }
 @media (max-width: 320px){
@@ -158,11 +157,17 @@ header{
         text-align: center; 
         padding: 0px 0px 0px 0px;
     }
+    .grid-container li{
+        padding-bottom: 5%;
+    }
     .weeknd{
-        margin-top: 50px;
+        margin-top: 80px;
+    }
+    ul .descripcion{
+        display: none;
     }
     .titulo{
-        top: 230px;
+        top: 127%;
         background-color: rgba(163, 160, 148, 0.432);
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
@@ -172,7 +177,6 @@ header{
     .foto-albumes{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        padding-left: 35px;
     }
     .after-hrs{
         display: none;
