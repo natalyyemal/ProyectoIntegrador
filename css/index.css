@@ -20,11 +20,15 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
 }
 .logo{
     align-items: initial;
     border-radius: 70px;
+}
+.titulos{
+    margin: auto;
+    color: white;
+    text-decoration: none;
 }
 h2{
     color: white;
@@ -33,11 +37,6 @@ h2{
     padding: 15px 0px;
     border-radius: 20px;
     margin-left: 40px;
-}
-.titulos{
-    margin: auto;
-    color: white;
-    text-decoration: none;
 }
 .banner{
     display: block;
@@ -54,9 +53,6 @@ ul .todos{
     padding: 0%;
     list-style: none;
     text-align: center;
-}
-li{
-    height: 40px;
 }
 li .todos{
     display: block;
@@ -107,6 +103,20 @@ footer .tracks{
     }
     .foto-bandas{
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+        padding: 0px;
+        text-align: center;
+    }
+    .foto-bandas a{
+        display: block;
+    }
+    .foto-bandas a img{
+        width: 100%;
+        
+    }
+    .foto-bandas{
+        display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 50px;
         padding: 0px;
@@ -117,37 +127,63 @@ footer .tracks{
         display: none;
     }   
 }
+@media(max-width: 496px){
+    .todos {
+        display: none;
+     }
+     .banner{
+         display: none;
+     }
+     .grid-container{
+         background-color: black;
+         width: 100%;
+         margin: 0px;
+         padding: 0px;
+         padding-top: 0%;
+     }
+     .titulos ul{
+         display: grid;
+         padding: 0px;
+         text-align: center;
+         list-style: none;
+     }
+     .titulos li{
+         display: block;
+     }
+     .logo{
+         display: grid;
+         margin: auto;
+     }
+     .grid-container ul{
+         display: grid;
+         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+         grid-template-columns: none; 
+         text-align: center;
+         padding: 0px 0px 0px 0px;   
+     }
+     .grid-container li{
+         padding-top: 0;
+     }
+}
 @media (max-width: 320px){
     .todos {
        display: none;
     }
-    footer .todos{
-        align-items: center;
-        margin-right: 50px;
-    }
-    section .tracks{
-        margin-left: 100px;
+    .banner{
+        display: none;
     }
     .grid-container{
         background-color: black;
         width: 100%;
         margin: 0px;
         padding: 0px;
-    }
-    .logo{
-        display: block;
-        align-items: center;
-        margin-left: 100%;
+        padding-top: 0%;
     }
     .titulos ul{
         display: grid;
         padding: 0px;
         text-align: center;
         list-style: none;
-    }
-    .grid-container{
-        display: grid;
-        margin: auto;
     }
     .titulos li{
         display: block;
@@ -157,24 +193,27 @@ footer .tracks{
         margin: auto;
     }
     .grid-container ul{
+        display: grid;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-columns: none; 
         text-align: center;
         padding: 0px 0px 0px 0px;   
     }
-    .todos{
-        display: none;
+    .grid-container li{
+        padding-top: 0;
     }
-    .banner{
-        display: none;
+    .foto-bandas a{
+        display: block;
+    }
+    .foto-bandas a img{
+        width: 100%;   
     }
     .foto-bandas{
-        margin: 80px 0px;
-        padding: 0px;
+        padding: 0;
         text-align: center;
-        align-items: center;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-top: 50px;
         width: 100%;
     }
     .fotos{

@@ -1,9 +1,7 @@
 *{
     box-sizing: border-box;
-}
-body{
-    background-color: rgba(21, 9, 32, 0.712);    
-    background-repeat: no-repeat;
+}body{
+    background-color: rgba(21, 9, 32, 0.712);
     font-family:'Comfortaa', cursive;
 }
 .grid-container{    
@@ -21,7 +19,6 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-top: 8%;
 }
 .logo{
     align-items: initial;
@@ -67,7 +64,7 @@ body{
     padding-top: 2%;
     padding-bottom: 1%;
 }
-@media(max-width: 320px){
+@media(max-width: 470px){
     .grid-container ul{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-columns: none; 
