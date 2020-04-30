@@ -105,6 +105,8 @@ body{
         border-bottom: 2px solid rgba(245, 245, 245, 0.445);
         list-style: none;
         padding: 0;
-        color: white;    
+        color: white;
+        padding-top: 3%;
+        padding-bottom: 3%;    
     }
 }
