@@ -6,21 +6,22 @@ body{
     background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
-.grid-container{
-    display: grid;    
-    text-align: right;
+.grid-container{    
+    background-color: black;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
+    padding: 0;
 }
 .grid-container ul{
     display: grid;
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    background-color: black;
+    padding: 0;
 }
 .grid-container li{
-    padding: 10px;
-    margin: auto;
-    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
 }
 .logo{
     align-items: initial;
@@ -37,6 +38,7 @@ body{
     grid-template-columns: 5% 40% 25% 25% 5%;
     text-align: left;
     color: white;
+    background-color: black;
 }
 h2{
     text-align: left;

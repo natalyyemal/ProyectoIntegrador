@@ -3,12 +3,10 @@
 }
 body{
     background-color: rgba(21, 9, 32, 0.712);
-    background-repeat: no-repeat;
     font-family:'Comfortaa', cursive;
 }
-.grid-container{   
+.grid-container{    
     background-color: black;
-    text-align: right;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.438);
     padding: 0;
 }
@@ -22,6 +20,11 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
+}
+.logo{
+    align-items: initial;
+    border-radius: 70px;
 }
 h2{
     color: white;
@@ -30,11 +33,6 @@ h2{
     padding: 15px 0px;
     border-radius: 20px;
     margin-left: 40px;
-
-}
-.logo{
-    border-radius: 70px;
-    width: 100%;
 }
 .titulos{
     margin: auto;
