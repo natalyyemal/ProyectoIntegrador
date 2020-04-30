@@ -145,14 +145,14 @@ ul .descripcion{
         padding: 15px;
         padding-top: 37px;
         left: 67%;
-        top: 64%;
+        top: 60%;
     }
     .twitter{
-        top: 66%;
+        top: 62%;
         left: 74%;
     }
     .instagram{
-        top: 66%;
+        top: 62%;
         left: 70%;
     }
     .titulo{
@@ -166,6 +166,29 @@ ul .descripcion{
     .foto-albumes{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 654px){
+    .grid-container ul{
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none; 
+        text-align: center; 
+        padding: 0;
+    }
+    .grid-container li{
+        padding-bottom: 5%;
+    }
+    ul .descripcion{
+        display: none;
+    }
+    .twitter{
+        display: none;
+    }
+    .instagram{
+        display: none;
+    }
+    .titulo{
+        top: 70%;
     }
 }
 @media (max-width: 320px){
@@ -182,7 +205,7 @@ ul .descripcion{
         display: none;
     }
     .titulo{
-        top: 99%;
+        top: 79%;
         background-color: rgba(163, 160, 148, 0.432);
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
@@ -190,12 +213,10 @@ ul .descripcion{
         font-size: 20px;
     }
     .twitter{
-        top: 72%;
-        left: 92%;
+        display: none;
     }
     .instagram{
-        top: 72%;
-        left: 88%;
+        display: none;
     }
     .foto-albumes{
         grid-template-columns: 1fr 1fr;
