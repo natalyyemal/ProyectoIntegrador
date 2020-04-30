@@ -66,7 +66,7 @@
     padding-top: 2%;
     padding-bottom: 1%;
 }
-.icono-play{
+/* .icono-play{
     position: absolute;
     top: 31.5%;
     left: 1%;
@@ -78,7 +78,7 @@
 }
 .icono{
 width: 9%;
-}
+} */
 @media(max-width: 1023px){
     .icono-play{
         display: none;
