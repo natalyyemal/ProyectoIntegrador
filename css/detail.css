@@ -31,10 +31,6 @@ body{
     color: white;
     text-decoration: none;
 }
-header{
-    margin-top: -80px;
-    width: 100%;
-}
 .titulo{
     color: white;
     position: absolute;
@@ -44,18 +40,15 @@ header{
     font-size: 65px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
     width: 100%;
-    top: 35%;
+    top: 36%;
     left: 2%;
 }
 .weeknd{
     width: 100%;
     top: 0px;
     z-index: 0;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-    width: 100%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 ul .descripcion{
     background-color: rgba(242, 234, 232, 0.5);
@@ -66,13 +59,32 @@ ul .descripcion{
     position: absolute; 
     z-index: 2;
     left: 70%;
-    top: 80%;
+    top: 119%;
     padding-top: 5%;
+}
+.iconos-redes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+}
+.instagram{
+    width: 3%;
+    position: absolute;
+    top: 121%;
+    left: 72%;
+    z-index: 3;
+}
+.twitter{
+    width: 3%;
+    position: absolute;
+    top: 121%;
+    left: 76%;
+    z-index: 3;
 }
 .populares{
     font-size: 40px;
     color: white;
-    margin-left: 30px;
+    padding-left: 30px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
 .container .popular-song{
@@ -92,15 +104,13 @@ ul .descripcion{
 .album1 .after-hours{
     width: 180px;
     float: left;
-    margin-right: 10px;
-    margin-left: 30px;
+    padding-left: 10px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-    width: 100px;
 }
 .nombre-after-hours{
     color: white;
     padding-top: 140px;
-    padding-left: 10px;
+    padding-left: 14%;
     font-size: 30px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
 }
@@ -133,9 +143,17 @@ ul .descripcion{
         width: 30%;
         font-size: 10px;
         padding: 15px;
-        padding-top: 50px;
+        padding-top: 37px;
         left: 67%;
-        top: 90%;
+        top: 64%;
+    }
+    .twitter{
+        top: 66%;
+        left: 74%;
+    }
+    .instagram{
+        top: 66%;
+        left: 70%;
     }
     .titulo{
         font-size: 30px;
@@ -155,24 +173,29 @@ ul .descripcion{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-columns: none; 
         text-align: center; 
-        padding: 0px 0px 0px 0px;
+        padding: 0;
     }
     .grid-container li{
         padding-bottom: 5%;
-    }
-    .weeknd{
-        margin-top: 80px;
     }
     ul .descripcion{
         display: none;
     }
     .titulo{
-        top: 127%;
+        top: 99%;
         background-color: rgba(163, 160, 148, 0.432);
         border-bottom-left-radius: 10px;
         border-top-left-radius: 10px;
         padding: 5px;
         font-size: 20px;
+    }
+    .twitter{
+        top: 72%;
+        left: 92%;
+    }
+    .instagram{
+        top: 72%;
+        left: 88%;
     }
     .foto-albumes{
         grid-template-columns: 1fr 1fr;
@@ -186,5 +209,11 @@ ul .descripcion{
     }
     .nombre-after-hours{
         display: none;
+    }
+    .populares{
+        margin: 0;
+        padding-left: 2%;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
 }
