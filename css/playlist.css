@@ -79,6 +79,11 @@
 .icono{
 width: 9%;
 }
+@media(max-width: 1023px){
+    .icono-play{
+        display: none;
+    }
+}
 @media(max-width: 470px){
     .grid-container ul{
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
