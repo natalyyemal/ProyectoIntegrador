@@ -39,15 +39,19 @@ body{
     text-align: left;
     color: white;
     background-color: black;
+    padding: 0;
+    border-radius: 5px;
 }
 h2{
     text-align: left;
     background-color: rgba(0, 0, 0, 0.664);
     padding: 10px;
     color: white;
+    border-radius: 5px;
 }
 .fotoartista{
     height: 80%;
+    padding-left: 30%;
 }
 .encabezado{
     text-align: left;
@@ -59,6 +63,8 @@ h2{
 }
 .playlist li{
     border-bottom: 3px solid rgba(245, 245, 245, 0.144);
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 @media(max-width: 768px){
     .p-celu{
