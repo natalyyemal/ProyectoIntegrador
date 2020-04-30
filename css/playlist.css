@@ -51,8 +51,8 @@ body{
     border-radius: 5px;
 }
 .fotoartista{
-    height: 80%;
-    padding-left: 30%;
+    width: 100%;
+    padding-left: 10%;
 }
 .encabezado{
     text-align: left;
