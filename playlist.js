@@ -1,15 +1,32 @@
-// let proxy = "https://cors-anywhere.herokuapp.com/"
-// let url = proxy + "https://api.deezer.com/chart/0/artists"
+let recuperoStorage = localStorage.getItem('playlist');
+let playlist = JSON.parse(recuperoStorage);
+let playlistWrapper = document.querySelector('.playlistWrapper');
 
-// fetch(url)
-// .then(function(dataJson){
-//     return dataJson. json()
-// })
-// .then(function(resultado){
-//     console.log(resultado)
-//     let charts = document.querySelector("img");
+if(recuperoStorage == null){
+    playlist = [];
+    playlistWrapper.innerHTML += '<li> No hay canciones en tu playlist </li>'
 
-// for(let i=0; i < 8; i++){
-//     charts.innerHTML= "<img src = ''" + data [i].picture + "'>"
-// }
-// })
+}else{
+    playlist.forEach(function(idTrack){
+        buscarYMostrarTrack(idTrack);
+    
+    });
+
+}
+
+function buscarYMostrarTrack(idTrack){
+    let proxy = "https://cors-anywhere.herokuapp.com/";
+    let url = proxy + "https://api.deezer.com/track/" + idTrack;
+
+    fetch(url)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function(track) {
+        playlistWrapper.innerHTML += '<li>' + '<a href="track.html?id=' + track.id + '">' + track.title + '<a/></li>'
+
+    }) 
+    .catch(function(errors){
+        console.log(errors);
+    })
+};
