@@ -14,10 +14,59 @@ fetch(url)
         //Resolver que hacemos con los datos.
         console.log(datos);
         let title = document.querySelector(".titulo");
+
         title.innerHTML += "<h1>"+  datos.name + "</h1>";
-               
-    })
+        let foto = document.querySelector(".weeknd");
+        foto.src = datos.picture_small;
+    }) 
     .catch(function(error){
-        console.log(error);
-        
-    });
+        console.log(error); 
+    })
+
+
+let inform = proxy + "https://api.deezer.com/artist/" + idArtista + "/albums"
+
+fetch(inform)
+.then(function(datas){
+    return datas.json()
+})
+
+.then(function(info){
+    console.log(info); 
+    let fotoss = info.data;
+    let bandas = document.querySelector('.fotos');
+    let albums = ''; 
+    for(let i=0; i<6; i++){
+      albums += '<div class="fotos">';  
+      albums += '<img src="' + fotoss[i].cover + '" alt="' +  '">';
+      albums += '</div>';
+    }
+    bandas.innerHTML = albums;
+})
+.catch(function(error){
+    console.log(error);
+})
+
+let pros = proxy + "https://api.deezer.com/artist/" + idArtista + "/top";
+
+fetch(pros)
+.then(function(datas){
+    return datas.json()
+})
+
+.then(function(popular){
+    console.log(popular); 
+    let cancion = popular.data;
+    console.log(cancion);
+    let tops = document.querySelector('.popularSong'); 
+    for(let i=0; i<6; i++){
+      tops += '<div class="container">';  
+      tops += '<li class="popular-song">' + cancion[i].title + '</li>';
+      tops += '</div>';
+    }
+    tops.innerHTML = songs;
+})
+
+.catch(function(error){
+    console.log(error);
+})
