@@ -13,11 +13,12 @@ fetch(url)
     .then(function(datos){
         //Resolver que hacemos con los datos.
         console.log(datos);
-        let nombres = datos.data;
-        let title = document.querySelector(".titulo");
-        nombres.forEach(function(nombre){
-        title.innerHTML += "<h1>"+  idArtista + "</h1>"            
-        });       
+        let lista = document.querySelector('.lista');
+        let info = datos.data;  
+        info.forEach(function(resultado){
+        lista.innerHTML += '<li>' + resultado.name + '</li>'       
+        }); 
+              
     })
     .catch(function(error){
         console.log(error);
