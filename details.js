@@ -81,10 +81,28 @@ fetch(info)
     console.log(informa);
     let canciones = document.querySelector('.after-hrs');
     let albumcompleto = '';
-    for (let i=0; i<2; i++){
+    for (let i=0; i<informa.length; i++){
         albumcompleto += '<li>' + informa[i].title + '</li>';
     } 
+    canciones.innerHTML += albumcompleto;
+    
 })
 .catch(function(error){
     console.log(error);
+})
+
+//No estoy pudiendo poner la foto noc que estoy haciendo mal
+let fotos = proxy + "https://api.deezer.com/album/" + idArtista;
+fetch(url)
+.then(function(response){
+    return response.json();
+})
+.then(function(respon){
+    console.log(respon);
+    let inform = respon.data;
+    let photo = document.querySelector(".after-hours");
+    photo.src = inform.picture;
+}) 
+.catch(function(error){
+    console.log(error); 
 })
