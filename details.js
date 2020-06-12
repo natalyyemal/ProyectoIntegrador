@@ -101,8 +101,9 @@ fetch(url)
     console.log(respon);
     let inform = respon.data;
     let photo = document.querySelector(".after-hours");
-    photo.src = inform.picture;
+    photo.src = inform.cover;
 }) 
+
 .catch(function(error){
     console.log(error); 
 })
