@@ -29,7 +29,7 @@ fetch(ruta)
     let album = dato.data;
     let ul = document.querySelector(".informacion");
     for (var i = 0; i < 10; i++) {
-        ul.innerHTML += '<li><a href="detail.html?id=' + album[i].id + '"' + ' class="informacion">' + album[i].title + '</a></li>';
+        ul.innerHTML += '<li><a href="albums.html?id=' + album[i].id + '"' + ' class="informacion">' + album[i].title + '</a></li>';
     }
 })
 .catch(function(error){
@@ -41,7 +41,7 @@ let link = proxy + "https://api.deezer.com/chart/0/tracks";
 
 fetch(link)
 .then(function(response){
-    return response.json()
+    return response.json();
 })
 .then(function(info){
     console.log(info); 

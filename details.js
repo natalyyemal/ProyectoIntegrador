@@ -14,7 +14,6 @@ fetch(url)
         //Resolver que hacemos con los datos.
         console.log(datos);
         let title = document.querySelector(".titulo");
-
         title.innerHTML += "<h1>"+  datos.name + "</h1>";
         let foto = document.querySelector(".weeknd");
         foto.src = datos.picture_big;

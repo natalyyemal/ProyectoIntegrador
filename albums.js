@@ -3,25 +3,21 @@ let queryStringObj = new URLSearchParams(queryString); //Obtenemos un objeto lit
 let idAlbums = queryStringObj.get("id"); //con el método get obtenenemos el valor del término a buscar. En este obtenenemos lo que escribió el usuario en el campo de busqueda cuyo "name" es "search" (name="search").
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-
-let url =  proxy + "https://api.deezer.com/album/" + idAlbums;
+let url = proxy + "https://api.deezer.com/chart/0/albums" + idAlbums;
 
 fetch(url)
     .then(function(response){
         return response.json();
     })
-    .then(function(datos){
+.then(function(datos){
         //Resolver que hacemos con los datos.
         console.log(datos);
-        let ar = arg.data;
-        console.log(ar)
-        
-        let title = document.querySelector(".titulo");
-
-        title.innerHTML += '<h1><a href="albums.html?id=' + idAlbums + '"' + ' class="titulo">' + ar.title + '</a></h1>';
+        let inform = datos.data;
+        let titlee = document.querySelector(".titulo");
+        titlee.innerHTML += "<h1>"+  inform.title + "</h1>";
         let foto = document.querySelector(".weeknd");
-        foto.src = data.cover;
+        foto.src = inform.cover;
     }) 
-    .catch(function(error){
+.catch(function(error){
         console.log(error); 
     })
