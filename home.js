@@ -79,6 +79,27 @@ fetch(fotos)
     console.log(error);
 })
 
+let colum = proxy + "https://api.deezer.com/genre/0/artists";
+
+fetch(ruta)
+.then(function(response){
+    return response.json()
+})
+.then(function(arg){
+    console.log(arg); 
+    let ar = arg.data;
+    console.log(ar)
+    let listado = document.querySelector(".generos");
+    for (var i = 0; i < 10; i++) {
+        listado.innerHTML += '<li><a href="detail.html?id=' + ar[i].id + '"' + ' class="generos">' + ar[i].name + '</a></li>';
+    }
+})
+.catch(function(error){
+    console.log(error);
+})
+
+
+
 // (".toggle").click(function()[
 //     (".formulario").animate({
 //         height: "toggle",

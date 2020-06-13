@@ -127,7 +127,7 @@ li .todos{
 }
 .todos{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 10px;
     padding: 10px;
     background-color: none;
