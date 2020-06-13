@@ -32,12 +32,19 @@ fetch(url)
 .then(function(genero){
     let nom = genero.data;
     console.log(nom);
-    let listado = document.querySelector ('.lista');
-    let todaLista = '';
-    for (let i=0; i<10; i++){
-        listado.innerHTML += '<li class= nombregenero>' + nom[i].name + '</li>';
+    let listado = document.querySelector('.foto-bandas'); 
+    let albums = ''; 
+    for(let i=0; i<9; i++){
+      albums += '<div class="fotos">'; 
+      albums += '<a href= "detail.html?id=' + nom[i].id + '">'; 
+      albums += '<img src="' + nom[i].picture + '" alt="' + nom[i].name + '">';
+      albums += '<li>' + nom[i].name + '"' + '</li>';
+      albums += '</div>';
     }
+
+    listado.innerHTML = albums;
 })
+
 
 .catch(function(error){
     console.log(error);

@@ -35,20 +35,21 @@ body{
     color: white;
     position: absolute;
     top: 0px;
-    right: 0px;
+    text-align: center;
+    right: 10px;
     z-index: 1;
     font-size: 65px;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
     width: 100%;
-    top: 30%;
-    left: 2%;
+    
 }
 .weeknd{
     width: 100%;
-    top: 0px;
+    height: 400px;
+    top: 15px;
     z-index: 0;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
-    margin-top: 2%;
+    margin-top: 0%;
 }
 .principio{
     position: relative;
@@ -143,6 +144,11 @@ body{
 .tablet{
     display: none;
 }
+.foto-bandas{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
 @media(max-width: 768px){
     .descripcion{
         display: none;
