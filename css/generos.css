@@ -131,7 +131,23 @@ body{
     font-size: 20px;
     text-align: center;
     gap: 10px;
-    
+    text-decoration: none;
+}
+.foto-bandas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    text-decoration: none;
+    }
+.nombres{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+.fotos{
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .nombregenero{
     background-color: rgba(242, 234, 232, 0.5);
@@ -144,10 +160,7 @@ body{
 .tablet{
     display: none;
 }
-.foto-bandas{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 @media(max-width: 768px){
     .descripcion{

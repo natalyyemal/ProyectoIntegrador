@@ -16,7 +16,7 @@ fetch(url)
         let lista = document.querySelector('.lista');
         let info = datos.data;  
         info.forEach(function(resultado){
-        lista.innerHTML += '<li>' + '<a href="detail.html?id=' + resultado.id + '">' + resultado.name + '</a></li>';
+        lista.innerHTML += '<li class= "resultados">' + '<a href="detail.html?id=' + resultado.id + '">' + resultado.name + '</a></li>';
         }); 
     })
     .catch(function(error){

@@ -38,7 +38,7 @@ fetch(url)
       albums += '<div class="fotos">'; 
       albums += '<a href= "detail.html?id=' + nom[i].id + '">'; 
       albums += '<img src="' + nom[i].picture + '" alt="' + nom[i].name + '">';
-      albums += '<li>' + nom[i].name + '"' + '</li>';
+      albums += '<li class= nombres>' + nom[i].name + '</li>';
       albums += '</div>';
     }
 
