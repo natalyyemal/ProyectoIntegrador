@@ -79,19 +79,37 @@ fetch(fotos)
     console.log(error);
 })
 
-let colum = proxy + "https://api.deezer.com/genre";
+let taza = proxy + "https://api.deezer.com/genre";
 
-fetch(ruta)
-.then(function(response){
-    return response.json()
+fetch(taza)
+.then(function(vaso){
+    return vaso.json();
 })
-.then(function(arg){
-    console.log(arg);
-})
-.catch(function(error){
-    console.log(error);
+.then(function(tapa){
+    console.log(tapa);
+    let genero = tapa.data;
+    let lista = document.querySelector(".generos");
+    for (var i = 1; i < 11; i++) {
+        lista.innerHTML += '<li><a href="generos.html?id=' + genero[i].id + '"' + ' class="track">' + genero[i].name + '</a></li>';
+    }
 })
 
+
+    
+    
+
+// let colum = proxy + "https://api.deezer.com/genre";
+
+// fetch(ruta)
+// .then(function(response){
+//     return response.json()
+// })
+// .then(function(arg){
+//     console.log(arg);
+// })
+// .catch(function(error){
+//     console.log(error);
+// })
 
 
 // (".toggle").click(function()[
