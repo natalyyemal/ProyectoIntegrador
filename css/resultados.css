@@ -57,7 +57,23 @@ a{
     text-decoration: none;
     color: black;
     border-radius: 3px;
-    gap: 30px
-    
-;
+    gap: 30px;
+}
+.footer{
+    background-color: black;
+    width: 95%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.fin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 70px;
+}
+.contenido-footer{
+    color: white;
+    text-align: center;
+    margin: auto;
+    list-style: none;
 }

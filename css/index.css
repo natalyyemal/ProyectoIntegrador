@@ -158,6 +158,54 @@ footer .tracks{
 .foto-bandas{
     display: none;
 }
+.footer{
+    background-color: black;
+    width: 95%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.fin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 70px;
+    margin-bottom: 0;
+}
+.contenido-footer{
+    color: white;
+    text-align: center;
+    margin: auto;
+    list-style: none;
+}
+.ocultar{
+    display: none;
+}
+.buscar{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
+}
+.buscador{
+    text-align: center;
+    margin: 30px;
+}
+.boton-buscador{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.384);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 8%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
+}
 @media(max-width: 768px){
     .slider{
         display: none;

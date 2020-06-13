@@ -134,6 +134,24 @@ body{
 .tablet{
     display: none;
 }
+.footer{
+    background-color: black;
+    width: 95%;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.fin{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 70px;
+}
+.contenido-footer{
+    color: white;
+    text-align: center;
+    margin: auto;
+    list-style: none;
+}
 @media(max-width: 768px){
     .descripcion{
         display: none;
