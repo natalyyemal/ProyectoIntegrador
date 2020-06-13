@@ -1,3 +1,56 @@
+// let imagenes = ['img/slider1.jpg , img/slider2.jpg , img/slider3.jpg']
+//     con = 0
+// function slider (contenedor){
+//     contenedor.addEventListener('click', a=>{
+//         let atras = contenedor.querySelector('.atras');
+//         let adelante = contenedor.querySelector('.adelante');
+//         let carrus = contenedor.querySelector('.slider');
+//         let evento = a.target;
+
+//         if(event == atras){
+//            if (con > 0){
+//                carrus.src = imagenes[con - 1];
+//                con--;
+//            }else{
+//                carrus.src = imagenes[imagenes.length - 1];
+//                con = imagenes.length - 1;
+//            }
+//         }else if (evento == adelante){ 
+//             if (con < imagenes[imagenes.length - 1]){
+//                 carrus.src = imagenes[con + 1];
+//                 con++;
+//             }else{
+//                 carrus.src = imagenes[0];
+//                 con = 0;
+//             }
+//         }
+//     });
+// }
+// document.addEventListener('DOMContentLoaded', () => {
+//     let contenedor = document.querySelector ('.contenedor');
+
+//     slider(contenedor);
+// });
+let slideIndex = 0;
+
+showSlides();
+
+function showSlides() {
+       let i;
+       let slides = document.getElementsByClassName("mySlides");
+       for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+       }
+
+       slideIndex++;
+       if(slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides,2000);
+}
+
+
+
+
 //Esta es la primera parte, osea el "top artist" de las 3 columnas que tenemos en desktop
 let proxy = "https://cors-anywhere.herokuapp.com/"; //El proxy es un permiso que se necesita pq sino te bloquea deezer y no te deja usarlo
 let url = proxy + "https://api.deezer.com/chart/0/artists"; // aca en la url tiene que ir la url del api de deezer de lo que queremos trabajar

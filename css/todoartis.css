@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    padding: 0%;
+    padding: 0;
 }
 body{
     background-color: rgba(21, 9, 32, 0.712);
@@ -140,11 +140,16 @@ body{
     margin: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    margin-bottom: 0;
+}
+.futer{
+    margin-bottom: 0;
 }
 .fin{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 70px;
+    margin-bottom: 0;
 }
 .contenido-footer{
     color: white;
