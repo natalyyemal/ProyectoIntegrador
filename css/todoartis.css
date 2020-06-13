@@ -154,7 +154,10 @@ body{
 }
 .foto-bandas{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    box-shadow: rgba(163, 160, 148, 0.432);
+    right: 30px;
 }
 @media(max-width: 768px){
     .descripcion{
