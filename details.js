@@ -17,6 +17,8 @@ fetch(url)
         title.innerHTML += "<h1>"+  datos.name + "</h1>";
         let foto = document.querySelector(".weeknd");
         foto.src = datos.picture_big;
+        let descrip = document.querySelector(".descripcion");
+        descrip.innerHTML = datos.name  + "<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
     }) 
     .catch(function(error){
         console.log(error); 
