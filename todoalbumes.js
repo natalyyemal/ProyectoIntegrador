@@ -16,7 +16,7 @@ fetch(url)
     let albums = ''; 
     for(let i=0; i<9; i++){
       albums += '<div class="fotos">';  
-      albums += '<a href= "albums.html?id=' + foto[i].id + '"' + '</a>';
+      albums += '<a href= "detail.html?id=' + foto[i].id + '"' + '</a>';
       albums += '<img src="' + foto[i].cover + '" alt="' +  '">';
       albums += '</div>';
     }
