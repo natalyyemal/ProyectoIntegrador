@@ -18,12 +18,17 @@ fetch(url)
         let foto = document.querySelector(".weeknd");
         foto.src = datos.picture_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML = datos.name  + "<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
+        descrip.innerHTML = '<a href="tracks.html?id='+ title.id + '">' + datos.name + '</a>';  
+        //+ "<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
+        descrip.innerHTML +="<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
     }) 
     .catch(function(error){
         console.log(error); 
     })
-
+    //'<a href="track.html?id='+ title.id + '">' + datos.name + '</a>'+ ' 
+    // probe estos pero no sale
+    // '<h1>' + '<a href="track.html?id='+ title.id+ '">'+ datos.name + '</a></h1>' 
+    // '<h1>' + '<a href="tracks.html?id='+ title.id+ '"</a>'+ datos.name + '</h1>'
 
 let inform = proxy + "https://api.deezer.com/artist/" + idArtista + "/albums"
 

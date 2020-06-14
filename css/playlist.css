@@ -30,9 +30,10 @@
     text-decoration: none;
 }
 .playlist ul{
-    display: grid;
     list-style: none;
-    grid-template-columns: 5% 40% 25% 25% 5%;
+    /* display: grid;
+    
+    grid-template-columns: 5% 40% 25% 25% 5%; */
     text-align: left;
     color: white;
     background-color: black;
@@ -81,7 +82,7 @@
 }
 .fin{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
     height: 70px;
 }
 .contenido-footer{
@@ -89,6 +90,16 @@
     text-align: center;
     margin: auto;
     list-style: none;
+}
+.logoDeezer{
+    height: 50px;
+    padding-left: 15%;
+}
+.redes-footer{
+    text-align: initial;
+    list-style: none;
+    color: white;
+    margin: auto;
 }
 .ocultar{
     display: none;
