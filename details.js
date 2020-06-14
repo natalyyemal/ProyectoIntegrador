@@ -18,16 +18,17 @@ fetch(url)
         let foto = document.querySelector(".weeknd");
         foto.src = datos.picture_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML = '<a href="tracks.html?id='+ title.id + '">' + datos.name + '</a>';  
+        descrip.innerHTML = datos.name;  
         //+ "<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
         descrip.innerHTML +="<br>" + "Fans: " + datos.nb_fan + "<br>" + "Nb Album: " + datos.nb_album;
     }) 
+
     .catch(function(error){
         console.log(error); 
     })
     //'<a href="track.html?id='+ title.id + '">' + datos.name + '</a>'+ ' 
     // probe estos pero no sale
-    // '<h1>' + '<a href="track.html?id='+ title.id+ '">'+ datos.name + '</a></h1>' 
+    // '<h1>' + '<a href="track.html?id='+ title.id + '"></a>'+ datos.name + </h1>' 
     // '<h1>' + '<a href="tracks.html?id='+ title.id+ '"</a>'+ datos.name + '</h1>'
 
 let inform = proxy + "https://api.deezer.com/artist/" + idArtista + "/albums"
@@ -44,12 +45,17 @@ fetch(inform)
     let albums = ''; 
     for(let i=0; i<6; i++){
       albums += '<div class="fotos">'; 
-      albums += '<a href="albums.html?id=' + fotoss.idArtista + '">';
+      albums += '<a href="albums.html?id=' + fotoss[i].id + '">';
       albums += '<img src="' + fotoss[i].cover + '" alt="' +  '">' + '</a>';
       albums += '</div>';
+  
     }
     bandas.innerHTML = albums;
 })
+
+
+//'<a href="tracks.html?id=' + ALGO.id + '">' + THEN(FUNCITOON).LO QUE QIERO + '</a>'
+
 .catch(function(error){
     console.log(error);
 })
@@ -66,7 +72,8 @@ fetch(pros)
     let tops = document.querySelector('.popular-song'); 
     let toptracks = '';
     for(let i=0; i<5; i++){
-      toptracks += '<li>' + cancion[i].title + '</li>';
+    
+      toptracks += '<li><a href= tracks.html?id=' +cancion[i].id + '>' + cancion[i].title + '</a></li>';
       console.log(toptracks);
     }
     tops.innerHTML+= toptracks;
@@ -89,7 +96,7 @@ fetch(info)
     let canciones = document.querySelector('.after-hrs');
     let albumcompleto = '';
     for (let i=0; i<informa.length; i++){
-        albumcompleto += '<li>' + informa[i].title + '</li>';
+        albumcompleto += '<li><a href= tracks.html?id='+ informa[i].id + '>' + informa[i].title + '</a></li>';
     } 
     canciones.innerHTML += albumcompleto;
     

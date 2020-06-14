@@ -16,8 +16,7 @@ fetch(url)
         let foto = document.querySelector(".weeknd");
         foto.src = datos.cover_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML = '<a href= "detail.html?id=' + datos.artist.id + '">';
-        descrip.innerHTML += datos.artist.name;  
+        descrip.innerHTML = '<a href= "detail.html?id=' + datos.artist.id + '">' + datos.artist.name + '</a>';
         descrip.innerHTML += "<br>" + "Fans: " + datos.fans + "<br>" + "Fecha de Salida: " + datos.release_date; 
     })
 .catch(function(error){
@@ -37,7 +36,7 @@ fetch(ruta)
     let tops = document.querySelector('.popular-song'); 
     let toptracks = '';
     for(let i=0; i<5; i++){
-      toptracks += '<li>' + cancion[i].title + '</li>';
+      toptracks += '<li><a href= tracks.html?id=' + cancion[i].id + '>' + cancion[i].title + '</a></li>';
     }
     tops.innerHTML+= toptracks;
 })
