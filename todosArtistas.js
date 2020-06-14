@@ -15,16 +15,18 @@ fetch(url)
     let foto = info.data;
     let bandas = document.querySelector('.foto-bandas');
     let albums = ''; 
+    
     for(let i=0; i<9; i++){
       albums += '<div class="fotos">';  
       albums += '<a href= "detail.html?id=' + foto[i].id + '"' + '</a>';
       albums += '<img src="' + foto[i].picture_medium + '" alt="' +  '">';
       albums += '</div>';
+      
     }
-    bandas.innerHTML = albums;
 
 })
-
+// let centrar = querySelector('.fotos');
+// centrar.style.justifyContent = 'center';
 
 .catch(function(error){
     console.log(error);

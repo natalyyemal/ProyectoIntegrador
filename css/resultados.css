@@ -67,7 +67,7 @@ a{
 }
 .fin{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
     height: 70px;
 }
 .contenido-footer{
@@ -75,4 +75,43 @@ a{
     text-align: center;
     margin: auto;
     list-style: none;
+}
+.logoDeezer{
+    height: 50px;
+    padding-left: 15%;
+}
+.redes-footer{
+    text-align: initial;
+    list-style: none;
+    color: white;
+    margin: auto;
+}
+.ocultar{
+    display: none;
+}
+.buscar{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    width: 40%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
+}
+.buscador{
+    text-align: center;
+    margin: 30px;
+}
+.boton-buscador{
+    background-color: black;
+    color: rgba(245, 245, 245, 0.384);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 8%;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
 }

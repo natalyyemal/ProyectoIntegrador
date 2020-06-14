@@ -1,74 +1,72 @@
 *{
     box-sizing: border-box;
 }
-.slideshow-container{
-    width: 100%;
-    position:relative;
-    margin:auto;
-}
-.carru{
-    height: 40%;
-}
-.mySlides{
-    display:none;
-    /* imagenes aparezcan x defecto */
-}
-.prev, .next{
-    cursor:pointer;
-    position:absolute;
-    top:50%;
-    width:auto;
-    margin-top:-22px;
-    padding:16px;
-    color:white;
-    font-weight:bold;
-    font-size:18px;
-    transition:0.6s ease;
-    border-radius:0 3px 3px 0;
-/* son las flechitas */
-}
-.next{
-    right:0;
-    border-radius:3px 0 0 3px;
-}
-.prev:hover, .next:hover{
-    background-color:rgba(0,0,0,0.8);
-}
-.text{
-    color:#f2f2f2;
-    font-size:15px;
-    padding:8px 12px;
-    position:absolute;
-    bottom:8px;
-    width:100%;
-    text-align:center;
-}
-   
-.numbertext{
-    color:#f2f2f2;
-    font-size:12px;
-    padding:8px 12px;
-    position:absolute;
-    top:0;
-}
-.fade{
-    -webkit-animation-name:fade;
-    -webkit-animation-duration:1.5s;
-    animation-name:fade;
-    animation-duration:1.5s;
-}
-   
-@-webkit-keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-}
-   
-@keyframes fade{
-    from{opacity:.4}
-    to{opacity:1}
-}
-/* animaciones son */
-
+/* CARRUSEL */
+        .slideshow-container{
+            width: 100%;
+            position:relative;
+            margin:auto;
+        }
+        .carru{
+            height: 40%;
+        }
+        .mySlides{
+            display:none;
+            /* imagenes aparezcan x defecto */
+        }
+        .prev, .next{
+            cursor:pointer;
+            position:absolute;
+            top:50%;
+            width:auto;
+            margin-top:-22px;
+            padding:16px;
+            color:white;
+            font-weight:bold;
+            font-size:18px;
+            transition:0.6s ease;
+            border-radius:0 3px 3px 0;
+        /* son las flechitas */
+        }
+        .next{
+            right:0;
+            border-radius:3px 0 0 3px;
+        }
+        .prev:hover, .next:hover{
+            background-color:rgba(0,0,0,0.8);
+        }
+        .text{
+            color:#f2f2f2;
+            font-size:15px;
+            padding:8px 12px;
+            position:absolute;
+            bottom:8px;
+            width:100%;
+            text-align:center;
+        }
+        .numbertext{
+            color:#f2f2f2;
+            font-size:12px;
+            padding:8px 12px;
+            position:absolute;
+            top:0;
+        }
+        .fade{
+            -webkit-animation-name:fade;
+            -webkit-animation-duration:1.5s;
+            animation-name:fade;
+            animation-duration:1.5s;
+        }
+        @-webkit-keyframes fade{
+            from{opacity:.4}
+            to{opacity:1}
+        }
+        @keyframes fade{
+            from{opacity:.4}
+            to{opacity:1}
+        }
+        /* animaciones son */
+/* TERMINA CARRUSEL */
 
 
 body{
@@ -173,7 +171,7 @@ footer .tracks{
 }
 .fin{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
     height: 70px;
     margin-bottom: 0;
 }
@@ -182,6 +180,16 @@ footer .tracks{
     text-align: center;
     margin: auto;
     list-style: none;
+}
+.logoDeezer{
+    height: 50px;
+    padding-left: 15%;
+}
+.redes-footer{
+    text-align: initial;
+    list-style: none;
+    color: white;
+    margin: auto;
 }
 .ocultar{
     display: none;
