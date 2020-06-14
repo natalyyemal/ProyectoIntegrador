@@ -43,8 +43,9 @@ fetch(inform)
     let bandas = document.querySelector('.foto-albumes');
     let albums = ''; 
     for(let i=0; i<6; i++){
-      albums += '<div class="fotos">';  
-      albums += '<img src="' + fotoss[i].cover + '" alt="' +  '">';
+      albums += '<div class="fotos">'; 
+      albums += '<a href="albums.html?id=' + fotoss.idArtista + '">';
+      albums += '<img src="' + fotoss[i].cover + '" alt="' +  '">' + '</a>';
       albums += '</div>';
     }
     bandas.innerHTML = albums;
