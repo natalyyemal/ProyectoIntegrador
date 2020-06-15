@@ -146,9 +146,9 @@
     body{
         width: 100%;
     }
-    .playlist{
+    /* .playlist{
         display: none;
-    }
+    } */
     .p-celu{
         display: inline;
     }
@@ -175,4 +175,8 @@
         padding-top: 3%;
         padding-bottom: 3%;    
     }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }   
 }

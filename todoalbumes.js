@@ -17,8 +17,9 @@ fetch(url)
     let albums = ''; 
     for(let i=0; i<9; i++){
       albums += '<div class="fotos">';  
-      albums += '<a href= "albums.html?id=' + foto[i].id + '"' + '</a>';
-      albums += '<img src="' + foto[i].cover_medium + '" alt="' +  '">';
+      albums += '<a href= "albums.html?id=' + foto[i].id + '">';
+      albums += '<img class= "fotito" src="' + foto[i].cover_medium + '" alt="' + '">';
+      albums += '<li class= nombres>' + foto[i].artist.name + '</li></a>';
       albums += '</div>';
     }
     bandas.innerHTML = albums;

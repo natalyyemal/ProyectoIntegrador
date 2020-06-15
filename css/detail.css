@@ -295,4 +295,8 @@ body{
         padding-top: 3%;
         padding-bottom: 3%;
     }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }

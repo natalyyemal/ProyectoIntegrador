@@ -12,7 +12,6 @@ fetch(url)
 .then(function(datos){
         console.log(datos);
         let album = document.querySelector(".titulo");
-        album.innerHTML = datos.title;
         let foto = document.querySelector(".weeknd");
         foto.src = datos.album.cover_big;
         let descrip = document.querySelector(".descripcion");

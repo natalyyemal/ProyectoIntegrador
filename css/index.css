@@ -286,6 +286,10 @@ footer .tracks{
      .grid-container li{
          padding-top: 0;
      }
+     .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 @media (max-width: 453px){
     .todos {
@@ -440,6 +444,7 @@ border-bottom-left-radius: 5px;
     text-decoration: none;
     font-size: 16px;
 }
+
 /* .contenedor-form .formulario{
     padding: 40px;
     display: none;
