@@ -43,6 +43,14 @@ body{
     top: 30%;
     left: 2%;
 }
+.fotobandas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.trackschart{
+    list-style: none;
+    text-decoration: none;
+}
 .weeknd{
     width: 100%;
     top: 0px;
@@ -128,6 +136,10 @@ body{
     
     padding-top: 3%;
 }
+/* .fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
 .albumes{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
@@ -246,6 +258,7 @@ body{
     .buscar{
         width: auto;
     }
+
 }
 @media (max-width: 654px){
     .grid-container ul{
@@ -271,6 +284,22 @@ body{
     }
     .titulo{
         top: 70%;
+    }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .fotito{
+        margin-left: 20%;
+    }
+}
+@media (max-width: 425px){
+    .foto-bandas{
+        grid-template-columns: 1fr;
+    }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 }
 @media (max-width: 320px){
@@ -325,8 +354,5 @@ body{
     .fotito{
         margin-left: 10%;
     }
-    .fin{
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    
 }
