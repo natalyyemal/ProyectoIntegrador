@@ -195,6 +195,20 @@ body{
     list-style: none;
 
 }
+.boton-buscador {    
+    border-radius: 10px;
+   margin-left: 25px;
+   margin-top: 50px;
+   
+}
+
+
+.boton {
+    background-color: rgb(2, 153, 153);
+    border-radius: 30px;
+    padding: 20px 30px 20px 30px;
+    border: none;
+}
 @media(max-width: 768px){
     .descripcion{
         display: none;
