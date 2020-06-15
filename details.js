@@ -115,37 +115,37 @@ fetch(url)
     console.log(respon);
     let inform = respon.data;
     let photo = document.querySelector(".after-hours");
-    photo.src = respon.cover;
+    photo.src = respon.picture_big;
 }) 
 
 .catch(function(error){
     console.log(error); 
 })
 
-let playlist = []
-let recuperoStorage = localStorage.getItem('playlist') ;
-if(recuperoStorage == null){
-    playlist = [];
-}else {
-    playlist = JSON.parse(recuperoStorage) ;
-}
+// let playlist = []
+// let recuperoStorage = localStorage.getItem('playlist') ;
+// if(recuperoStorage == null){
+//     playlist = [];
+// }else {
+//     playlist = JSON.parse(recuperoStorage) ;
+// }
 
-if(playlist.includes(id)){
-    document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST'
-}
-let agregar = document.querySelector('.boton') ;
-agregar.addEventListener('click', function(){
-    if(playlist.includes(id)){
-        let indiceEnElArray = playlist.indexOf(id);
-        playlist.splice(indiceEnElArray, 1);
-        document.querySelector('.boton').innerHTML = 'ADD TO PLAYLIST' ;
-        console.log(playlist);
-    } else{
-     playlist.push(idTrack);
-     document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST' ;
+// if(playlist.includes(id)){
+//     document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST'
+// }
+// let agregar = document.querySelector('.boton') ;
+// agregar.addEventListener('click', function(){
+//     if(playlist.includes(id)){
+//         let indiceEnElArray = playlist.indexOf(id);
+//         playlist.splice(indiceEnElArray, 1);
+//         document.querySelector('.boton').innerHTML = 'ADD TO PLAYLIST' ;
+//         console.log(playlist);
+//     } else{
+//      playlist.push(idTrack);
+//      document.querySelector('.boton').innerHTML = 'REMOVE FROM PLAYLIST' ;
 
-    }
-     let playlistParaStorage = JSON.stringify(playlist) ;
-     localStorage.setItem('playlist', playlistParaStorage) ;
-     console.log(localStorage) ;
-})
+//     }
+//      let playlistParaStorage = JSON.stringify(playlist) ;
+//      localStorage.setItem('playlist', playlistParaStorage) ;
+//      console.log(localStorage) ;
+// })
