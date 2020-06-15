@@ -26,10 +26,21 @@ function buscarYMostrarTrack(idTrack){
             return response.json();
         })
         .then(function (track) {
-            playlistWrapper.innerHTML += '<li>' + '<a href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>' 
+            let boton = document.querySelector('.agregar')
+            playlistWrapper.innerHTML += '<li>'; 
+            playlistWrapper.innerHTML += '<img class= "fotitoPlaylist" src="' + track.artist.picture_small + '">' + '<a class="nombresPlay" href="tracks.html?id=' + track.id + '">' + track.title + '</a></li>';
+            // SE FUE EL HREF NO SE Q HACERRRRRR
         })
         .catch(function(errors){
             console.log(errors);
 
         })
 };
+
+/* <li><a href="audio/Post Malone - Big Lie lyrics.mp3" target="_blank"><img class="fotoartista" src="img/postmalone.jpg" alt="postmalone" srcset=""><img class="icono-play" src="img/logoplay.png" alt=""></a></li> 
+<li> + '<a href="tracks.html?id=' + track.id + '">' + '<img src ="' + contributors.picture_small + '" alt="">' + track.title +'</a></li>';
+
+
+
+*/
+

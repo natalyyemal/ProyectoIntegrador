@@ -67,7 +67,7 @@ a{
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
     height: 70px;
 }
 .contenido-footer{
@@ -85,6 +85,7 @@ a{
     list-style: none;
     color: white;
     margin: auto;
+    text-decoration: none;
 }
 .ocultar{
     display: none;
@@ -115,4 +116,11 @@ a{
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
 }
-
+@media(max-width: 768px){
+    .boton-buscador{
+        width: auto;
+    }
+    .buscar{
+        width: auto;
+    }
+}

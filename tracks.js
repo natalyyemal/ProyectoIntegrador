@@ -32,14 +32,15 @@ fetch(url)
         console.log(datos);
 
         //Resolvemos qué hacemos con los datos
-        let titulo = document.querySelector('.titulo');
-        titulo.innerHTML += datos.title;
+        
+        // let titulo = document.querySelector('.titulo');
+        // titulo.innerHTML += datos.title;
 
-        let interprete = document.querySelector('.interprete');
-        interprete.innerHTML += datos.artist.name
+        // let interprete = document.querySelector('.interprete');
+        // interprete.innerHTML += datos.artist.name
 
-        let album = document.querySelector('.album');
-        album.innerHTML += datos.album.title
+        // let album = document.querySelector('.album');
+        // album.innerHTML += datos.album.title
 
         //Aquí agregamos el player.
         let player = document.querySelector('iframe');

@@ -143,7 +143,7 @@ body{
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
     height: 70px;
 }
 .contenido-footer{
@@ -160,6 +160,7 @@ body{
     list-style: none;
     color: white;
     margin: auto;
+    text-decoration: none;
 }
 .ocultar{
     display: none;
@@ -201,13 +202,24 @@ body{
    margin-top: 50px;
    
 }
-
-
 .boton {
     background-color: rgb(2, 153, 153);
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     border: none;
+}
+.agregar{
+    /* boton agregar a playlist */
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 10%;
+}
+.verPlaylist{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 10%;
 }
 @media(max-width: 768px){
     .descripcion{
@@ -235,6 +247,12 @@ body{
     .foto-albumes{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .boton-buscador{
+        width: auto;
+    }
+    .buscar{
+        width: auto;
     }
 }
 @media (max-width: 654px){

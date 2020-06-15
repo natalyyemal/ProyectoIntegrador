@@ -29,11 +29,13 @@
     color: white;
     text-decoration: none;
 }
+.playlist{
+    display: grid;
+    grid-template-columns: 0.2 fr 3fr;
+}
 .playlist ul{
     list-style: none;
-    /* display: grid;
     
-    grid-template-columns: 5% 40% 25% 25% 5%; */
     text-align: left;
     color: white;
     background-color: black;
@@ -64,9 +66,18 @@
 }
 .playlist li{
     border-bottom: 3px solid rgba(245, 245, 245, 0.144);
-    padding-top: 2%;
-    padding-bottom: 1%;
+    /* padding-top: 2%;
+    padding-bottom: 1%; */
     position: relative;
+}
+.fotitoPlaylist{
+    padding-left: 1%;
+    border-radius: 3px;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+.nombresPlay{
+    color: white;
 }
 .icono-play{
     position: absolute;
@@ -82,7 +93,7 @@
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
     height: 70px;
 }
 .contenido-footer{
@@ -100,6 +111,7 @@
     list-style: none;
     color: white;
     margin: auto;
+    text-decoration: none;
 }
 .ocultar{
     display: none;
@@ -129,6 +141,14 @@
     text-align: center;
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
+}
+@media(max-width: 768px){
+    .boton-buscador{
+        width: auto;
+    }
+    .buscar{
+        width: auto;
+    }
 }
 @media(max-width: 470px){
     .icono-play{
@@ -179,4 +199,5 @@
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }   
+    
 }

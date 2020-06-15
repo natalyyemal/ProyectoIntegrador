@@ -144,7 +144,7 @@ body{
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.1fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
     height: 70px;
     margin-bottom: 0;
 }
@@ -163,6 +163,7 @@ body{
     list-style: none;
     color: white;
     margin: auto;
+    text-decoration: none;
 }
 .foto-bandas{
     display: grid;
@@ -238,6 +239,12 @@ body{
     .foto-albumes{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .boton-buscador{
+        width: auto;
+    }
+    .buscar{
+        width: auto;
     }
 }
 @media (max-width: 654px){
