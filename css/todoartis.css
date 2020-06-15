@@ -200,6 +200,11 @@ body{
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
 }
+.hipervinculo{
+    text-decoration: none;
+    list-style: none;
+
+}
 @media(max-width: 768px){
     .descripcion{
         display: none;
