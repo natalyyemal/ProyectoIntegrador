@@ -237,10 +237,10 @@ footer .tracks{
         margin-top: 50px;
         padding: 0px;
         text-align: center;
-        gap: 3%;
     }
     .foto-bandas a{
         display: block;
+        padding: 3%;
     }
     .foto-bandas a img{
         width: 100%;

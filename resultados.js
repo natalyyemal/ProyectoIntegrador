@@ -1,3 +1,7 @@
+window.addEventListener('load', function(){
+    let loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+})
 let queryString= location.search;
 let queryStringObj = new URLSearchParams(queryString); //Obtenemos un objeto literal con toda la info de los parametros en la url
 let idArtista = queryStringObj.get("search"); //con el método get obtenenemos el valor del término a buscar. En este obtenenemos lo que escribió el usuario en el campo de busqueda cuyo "name" es "search" (name="search").

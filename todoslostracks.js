@@ -17,16 +17,17 @@ fetch(url)
     let datos = data.data;
     let track = document.querySelector(".fotos");
     let tracks = "";
-    for(let i=0; i<9; i++){
-        // track.innerHTML = "<div class = 'foto-bandas'>";
-        track.innerHTML += '<li class="trackschart">' + "<a href = 'tracks.html?id=" + datos[i].id + "'";
-        track.innerHTML += "<img src='" + datos[i].artist.picture_small + "'>";
-        track.innerHTML += datos[i].title_short + "</a></li>";
-
+    for(let i=0; i<9; i++){    
+        tracks += '<li class="trackschart">';
+        tracks +=       '<a href="tracks.html?id=' + datos[i].id + '">';
+        tracks +=           '<img src="' + datos[i].artist.picture_small + '">';
+        tracks +=        datos[i].title_short + '</a>';
+        tracks += '</li>';
         // track.innerHTML += "</div>";
         // tracks += '<li>' + '<a  href="tracks.html?id='+ datos[i].id + '">'+ datos[i].title_short + '</a></li>'
     }
-    // track.innerHTML = tracks;
+    // console.log(tracks);
+    track.innerHTML += tracks;
 })
 .catch(function(error){
     console.log(error);
