@@ -15,12 +15,12 @@ fetch(url)
 .then(function(data){
     console.log(data);
     let datos = data.data;
-    let track = document.querySelector(".fotos");
-    let tracks = "";
+    let track = document.querySelector(".fotulis");
+    let tracks = '';
     for(let i=0; i<9; i++){    
         tracks += '<li class="trackschart">';
         tracks +=       '<a href="tracks.html?id=' + datos[i].id + '">';
-        tracks +=           '<img src="' + datos[i].artist.picture_small + '">';
+        tracks +=           '<img src="' + datos[i].artist.picture_medium+ '">' + '<br>';
         tracks +=        datos[i].title_short + '</a>';
         tracks += '</li>';
         // track.innerHTML += "</div>";

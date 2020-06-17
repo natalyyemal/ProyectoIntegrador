@@ -221,6 +221,26 @@ body{
     border-radius: 5px;
     width: 10%;
 }
+.volver{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    width: 10%;
+    display: inline;
+}
+.volver a{
+    text-decoration: none;
+    color: white;
+}
+.verPlaylist a{
+    text-decoration: none;
+    color: white;
+}
+.botonsitos{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    padding-left: 3%;
+}
 @media(max-width: 768px){
     .descripcion{
         display: none;

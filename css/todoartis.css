@@ -225,6 +225,17 @@ body{
     margin-left: 15%;
 
 }
+.fotulis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ .trackschart img{
+    width: 200px;
+} 
+.trackschart a{
+    text-decoration: none;
+    color: black;
+} 
 @media(max-width: 768px){
     .descripcion{
         display: none;
