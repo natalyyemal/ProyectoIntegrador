@@ -14,6 +14,7 @@ function showSlides() {
     //    el 2000 es el tiempo
 }
 
+
 //Esta es la primera parte, osea el "top artist" de las 3 columnas que tenemos en desktop
 let proxy = "https://cors-anywhere.herokuapp.com/"; //El proxy es un permiso que se necesita pq sino te bloquea deezer y no te deja usarlo
 let url = proxy + "https://api.deezer.com/chart/0/artists"; // aca en la url tiene que ir la url del api de deezer de lo que queremos trabajar

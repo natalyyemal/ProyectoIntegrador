@@ -235,16 +235,15 @@ footer .tracks{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 50px;
-        padding: 0px;
         text-align: center;
-        gap: 3%;
+        padding-left: 4px;
+        padding-right: 4px;
     }
     .foto-bandas a{
         display: block;
     }
     .foto-bandas a img{
-        width: 100%;
-        
+        width: 50%;
     }
     .todos{
         display: none;
@@ -298,7 +297,7 @@ footer .tracks{
      .grid-container li{
          padding-top: 0;
      }
-     .fin{
+     .futer{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
@@ -344,7 +343,7 @@ footer .tracks{
         display: block;
     }
     .foto-bandas a img{
-        width: 100%;   
+        width: 70%;   
     }
     .foto-bandas{
         padding: 0;
@@ -360,6 +359,16 @@ footer .tracks{
         margin: auto;
     }
 }
+/* @media (max-width: 320px){
+    .footer{
+        display: grid;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: none;
+    }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+    } */
 *{
     margin: 0%;
     padding: 0%;
