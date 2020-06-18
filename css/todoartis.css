@@ -241,11 +241,16 @@ body{
 }
 .fotos{
     margin: auto;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    padding-bottom: 2%;
 }
 .trackschart{
     position: relative;
     width: 50%;
     max-width: 300px;
+    padding-bottom: 2%;
   }
   
   /* Make the image to responsive */
@@ -258,7 +263,7 @@ body{
   /* The overlay effect - lays on top of the container and over the image */
   .overlay {
     /* position: absolute; */
-    bottom: -20%;
+    /* bottom: -20%; */
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     color: #f1f1f1;
@@ -267,15 +272,21 @@ body{
     opacity:0;
     color: white;
     font-size: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     text-align: center;
-    
+    list-style: none;
   }
   
   /* When you mouse over the container, fade in the overlay title */
   .trackschart:hover .overlay {
     opacity: 1;
     border-radius: 5px;
+    
+  }
+  .fotos:hover .overlay {
+    opacity: 1;
+    border-radius: 5px;
+    
   }
 @media(max-width: 768px){
     .descripcion{
