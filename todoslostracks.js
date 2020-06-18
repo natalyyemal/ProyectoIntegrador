@@ -19,8 +19,8 @@ fetch(url)
     let tracks = '';
     for(let i=0; i<9; i++){    
         tracks += '<li class="trackschart">';
-        tracks +=       '<a href="tracks.html?id=' + datos[i].id + '">';
-        tracks +=           '<img src="' + datos[i].artist.picture_medium+ '">' + '<br>';
+        tracks +=       '<a class="overlay" href="tracks.html?id=' + datos[i].id + '">';
+        tracks +=           '<img class="image" src="' + datos[i].artist.picture_medium+ '">';
         tracks +=        datos[i].title_short + '</a>';
         tracks += '</li>';
         // track.innerHTML += "</div>";
