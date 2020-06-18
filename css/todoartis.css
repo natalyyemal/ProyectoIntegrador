@@ -229,9 +229,9 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
- .trackschart img{
+ /* .trackschart img{
     width: 200px;
-} 
+}  */
 .trackschart a{
     text-decoration: none;
     color: black;
@@ -295,14 +295,14 @@ body{
     .tablet{
         background-color: blanchedalmond;
     }
-    .twitter{
+    /* .twitter{
         top: 62%;
         left: 74%;
     }
     .instagram{
         top: 62%;
         left: 70%;
-    }
+    } */
     .titulo{
         font-size: 30px;
         top: 45%;
@@ -321,7 +321,19 @@ body{
     .buscar{
         width: auto;
     }
-
+    .overlay{
+        opacity: 100%;
+        background-color: none;
+        background: none;
+    }
+    /* .fotoban{
+        margin: 0;
+        justify-self: start;
+    } */
+    .trackschart{
+        margin: 10%;
+        width: 100%;
+    }
 }
 @media (max-width: 654px){
     .grid-container ul{
@@ -339,12 +351,12 @@ body{
     .tablet{
         display: none;
     }
-    .twitter{
+    /* .twitter{
         display: none;
     }
     .instagram{
         display: none;
-    }
+    } */
     .titulo{
         top: 70%;
     }
@@ -356,8 +368,15 @@ body{
         margin-left: 20%;
     }
     .fotulis{
+        grid-template-columns: 1fr 1fr;
+    }
+    .trackschart{
+        margin: auto;
+    }
+}
+@media (max-width: 600px){
+    .fotulis{
         grid-template-columns: 1fr;
-    
     }
 }
 @media (max-width: 425px){
@@ -367,6 +386,9 @@ body{
     .fin{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .fotulis{
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 320px){
