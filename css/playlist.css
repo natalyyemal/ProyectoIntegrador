@@ -152,6 +152,14 @@
     font-size: 18px;
     box-shadow: rgba(0, 0, 0, 0.589) 1px 1px 1px;
 }
+.quitar{
+    background-color: black;
+    border-color: rgb(180, 40, 40);
+    color: white;
+    width: auto;
+    padding: 5px;
+    border-radius: 8px;
+}
 @media(max-width: 768px){
     .boton-buscador{
         width: auto;

@@ -15,7 +15,7 @@ fetch(url)
         let foto = document.querySelector(".weeknd");
         foto.src = datos.album.cover_big;
         let descrip = document.querySelector(".descripcion");
-        descrip.innerHTML += "<a class='hipervinculo' href= detail.html?id=" + datos.artist.id + "'>" + datos.artist.name + "</a>"; 
+        descrip.innerHTML += "<a class='hipervinculo' href= detail.html?id='" + datos.artist.id + "'>" + datos.artist.name + "</a>"; 
         descrip.innerHTML += "<br>" + "Duración: " + datos.duration + "<br>" + "Nombre del Álbum: " + datos.album.title; 
 
     })
@@ -93,7 +93,7 @@ agregar.addEventListener('click', function(e){
         playlist.push(idTrack);
         document.querySelector('.agregar').innerHTML = "Quitar de la playlist"
             alert("Has agregado exitosamente esta canción de tu playlist");
-            agregar.style.backgroundColor = 'red';
+            agregar.style.backgroundColor = 'rgb(180, 40, 40)';
     }
     //
 
