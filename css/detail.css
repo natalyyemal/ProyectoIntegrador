@@ -138,29 +138,39 @@ body{
     background-color: black;
     width: 95%;
     margin: auto;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
+    
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
-    height: 70px;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr; 
+    margin-bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+    padding: 3px;
 }
+
+
 .contenido-footer{
     color: white;
     text-align: center;
     margin: auto;
     list-style: none;
-}.logoDeezer{
+}
+.logoDeezer{
     height: 50px;
-    padding-left: 15%;
+    /* padding-left: 15%; */
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
 }
 .redes-footer{
     text-align: initial;
     list-style: none;
-    color: white;
+    /* color: white; */
     margin: auto;
     text-decoration: none;
+    height: 30px;
 }
 .ocultar{
     display: none;
@@ -194,7 +204,7 @@ body{
 .hipervinculo{
     text-decoration: none;
     list-style: none;
-
+    color: white;
 }
 .boton-buscador {    
     border-radius: 10px;
@@ -207,26 +217,30 @@ body{
     border-radius: 30px;
     padding: 20px 30px 20px 30px;
     border: none;
+    padding: 5px;
 }
 .agregar{
     /* boton agregar a playlist */
     color: white;
     background-color: black;
     border-radius: 5px;
-    width: 10%;
+    width: auto;
+    padding: 5px;
 }
 .verPlaylist{
     color: white;
     background-color: black;
     border-radius: 5px;
-    width: 10%;
+    width: auto;
+    padding: 5px;
 }
 .volver{
     color: white;
     background-color: black;
     border-radius: 5px;
-    width: 10%;
+    width: auto;
     display: inline;
+    padding: 5px;
 }
 .volver a{
     text-decoration: none;
@@ -274,6 +288,14 @@ body{
     .buscar{
         width: auto;
     }
+    .fin{
+        font-size: 10px;
+        grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    }
+    .logoDeezer{
+        
+        padding: none;
+    }
 }
 @media (max-width: 654px){
     .grid-container ul{
@@ -299,6 +321,16 @@ body{
     }
     .titulo{
         top: 70%;
+    }
+}
+@media (max-width: 453px){
+    .fin{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr ;
+        gap: 2px;
+    } 
+    .contenido-footer{
+        font-size: 20px;
     }
 }
 @media (max-width: 320px){
@@ -347,8 +379,8 @@ body{
         padding-top: 3%;
         padding-bottom: 3%;
     }
-    .fin{
+    /* .fin{
         grid-template-columns: none;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    } */
 }

@@ -35,10 +35,13 @@ fetch(ruta)
     let cancion = data.data;
     let tops = document.querySelector('.popular-song'); 
     let toptracks = '';
+    
     for(let i=0; i<5; i++){
       toptracks += '<li><a class="hipervinculo" href= tracks.html?id=' + cancion[i].id + '>' + cancion[i].title + '</a></li>';
     }
     tops.innerHTML+= toptracks;
+
+    // if()
 })
 
 .catch(function(error){

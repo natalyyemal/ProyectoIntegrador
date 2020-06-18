@@ -173,16 +173,14 @@ footer .tracks{
 }
 .fin{
     display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr; 
+    grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr; 
     margin-bottom: 0;
     background-color: black;
     border-radius: 20px;
+    padding: 3px;
 }
 
-.futer{
-    display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
-}
+
 .contenido-footer{
     color: white;
     text-align: center;
@@ -191,14 +189,18 @@ footer .tracks{
 }
 .logoDeezer{
     height: 50px;
-    padding-left: 15%;
+    /* padding-left: 15%; */
+    list-style: none;
+    text-decoration: none;
+    margin: auto;
 }
 .redes-footer{
     text-align: initial;
     list-style: none;
-    color: white;
+    /* color: white; */
     margin: auto;
     text-decoration: none;
+    height: 30px;
 }
 .ocultar{
     display: none;
@@ -260,8 +262,11 @@ footer .tracks{
    
     .fin{
         font-size: 10px;
-        /* grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr; */
+        grid-template-columns: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr;
+    }
+    .logoDeezer{
         
+        padding: none;
     }
     .boton-buscador{
         width: auto;
@@ -308,20 +313,20 @@ footer .tracks{
      .grid-container li{
          padding-top: 0;
      }
-     .futer{
+     /* .futer{
         grid-template-columns: none;
         /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
         background-color: black;
         /* overflow: auto; */
         margin-bottom: 10%
     }
-    .futer{
+    /* .futer{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    .logoDeezer{
+    } */ 
+    /* .logoDeezer{
         padding-left: none;
-    }
+    } */
 }
 @media (max-width: 453px){
     .todos {
@@ -381,20 +386,32 @@ footer .tracks{
     }
     .fin{
         grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr ;
+        gap: 2px;
+    } 
+    .contenido-footer{
+        font-size: 20px;
     }
  
 }
-/* @media (max-width: 320px){
-    .footer{
+/* /* @media (max-width: 320px){ */
+    /* .footer{
         display: grid;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-columns: none;
-    }
-    .fin{
-        grid-template-columns: none;
-        grid-template-rows: 1fr;
     } */
-*{
+    /* .fin{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr ;
+        gap: 2px;
+    } 
+    .contenido-footer{
+        font-size: 20px;
+    } */
+
+}
+
+    *{
     margin: 0%;
     padding: 0%;
 }

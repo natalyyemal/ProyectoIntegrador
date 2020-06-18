@@ -45,7 +45,7 @@ fetch(inform)
     let albums = ''; 
     for(let i=0; i<6; i++){
       albums += '<div class="fotos">'; 
-      albums += '<a href="albums.html?id=' + fotoss[i].id + '">';
+      albums += '<a class = "hipervinculo" href="albums.html?id=' + fotoss[i].id + '">';
       albums += '<img src="' + fotoss[i].cover + '" alt="' +  '">' + '</a>';
       albums += '</div>';
   
@@ -73,7 +73,7 @@ fetch(pros)
     let toptracks = '';
     for(let i=0; i<5; i++){
     
-      toptracks += '<li><a href= tracks.html?id=' +cancion[i].id + '>' + cancion[i].title + '</a></li>';
+      toptracks += '<li><a class = "hipervinculo" href= tracks.html?id=' +cancion[i].id + '>' + cancion[i].title + '</a></li>';
       console.log(toptracks);
     }
     tops.innerHTML+= toptracks;
@@ -96,7 +96,7 @@ fetch(info)
     let canciones = document.querySelector('.after-hrs');
     let albumcompleto = '';
     for (let i=0; i<informa.length; i++){
-        albumcompleto += '<li><a href= tracks.html?id='+ informa[i].id + '>' + informa[i].title + '</a></li>';
+        albumcompleto += '<li><a class = "hipervinculo" href= tracks.html?id='+ informa[i].id + '>' + informa[i].title + '</a></li>';
     } 
     canciones.innerHTML += albumcompleto;
     

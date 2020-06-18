@@ -72,7 +72,7 @@ if(playlist.includes(idTrack)){
 
 //Paso 2: agregar un track a la playlist.
 let agregar = document.querySelector('.agregar');
-
+agregar.style.backgroundColor = 'green';
 agregar.addEventListener('click', function(e){
     //Detener el comportamiento default de <a></a>
     // e.preventDefault();
@@ -86,13 +86,14 @@ agregar.addEventListener('click', function(e){
         console.log(playlist);
         
             alert("Has quitado exitosamente esta canción a tu playlist");
-
+            agregar.style.backgroundColor = 'green';
     // agregar.style.display = "none";
     } else { 
         //Agrego el id del track a la lista
         playlist.push(idTrack);
         document.querySelector('.agregar').innerHTML = "Quitar de la playlist"
             alert("Has agregado exitosamente esta canción de tu playlist");
+            agregar.style.backgroundColor = 'red';
     }
     //
 
