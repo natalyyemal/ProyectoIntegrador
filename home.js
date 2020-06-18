@@ -27,7 +27,7 @@ let saludo = document.querySelector(".saludo");
 let bienvenida = document.querySelector(".bienvenida");
 
 titulo.onmouseover = function(){
-    let nombre = prompt("Bienvenid@ cómo te llamas?");
+    let nombre = prompt("Bienvenid@, ¿Cómo te llamas?");
     saludo.style.textTransform = "uppercase";
     saludo.style.textTransform = "bold";
     saludo.style.textAlign = "center";
@@ -35,7 +35,7 @@ titulo.onmouseover = function(){
     if(nombre == ""){
         saludo.innerHTML = "¡ Bienvenid@ al sitio !";
     } else {
-        saludo.innerHTML = "¡ Bienvenido al sitio " + nombre + " !";
+        saludo.innerHTML = "¡ Bienvenid@ al sitio " + nombre + " !";
     }
     titulo.style.display = "none";
 }

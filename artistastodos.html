@@ -17,31 +17,53 @@
             <li class="titulop"><a class="titulos" href="playlist.html"> PLAYLIST</a></li>
         </ul> 
     </div>
+    
     <div class="buscador">
         <h1 class="ocultar">Buscador</h1>
         <form action="resultados.html" method="GET">
-            <input class='buscar' type="text" name="search" placeholder="¿Qué querés buscar?">
+            <input class='buscar' type="text" name="search" placeholder="¿Qué querés buscar?" class="search">
             <button class='boton-buscador' type="submit">Buscar</button>
+            
+            <div class="filtro-buscar">
+              <label class="etiqueta">
+                  <input class="option" type="radio" name="option" id="input" value="track" checked>
+                  Track
+              </label>
+              <label>
+                  <input class="option" type="radio" name="option" id="input" value="artist" >
+                  Artist
+            </label>
+            <label>
+                  <input type="radio" name="option" id="input" value="album" class="option">
+                  Album
+            </label>
+          </div> 
         </form>
       </div>
+      
+      <h1 class="display-resultados"></h1>
+      
+      <div class="main-detail-containter">
+            <ul class="lista">
+            </ul>
+      </div>
+    
     <section class="foto-bandas">
         <div class="fotos">
         </div>
     </section>
 
     <footer class="footer">
-        <div class="futer">
-          <ul class="fin">
-            <li class="redes-footer"><img class="logoDeezer" src="img/logodeezer.png" alt=""></li>
-        <li class="redes-footer"><a class="redes-footer" href="https://twitter.com/deezer?lang=es">Twitter</a></li>
-        <li class="redes-footer"><a class="redes-footer" href="https://www.instagram.com/deezer/?hl=es-la">Instagram</a></li>
-        <li class="redes-footer"><a class="redes-footer" href="https://www.facebook.com/DeezerLatino/?brand_redir=173259534981">Facebook</a></li>
+        <ul class="fin">
+          <li class="logoDeezer"><img class="logoDeezer" src="img/logodeezer.png" alt=""></li>
+        <li class="redes-footer"><a class="redes-footer" href="https://twitter.com/deezer?lang=es"><img class="redes-footer" src="img/twitter.png" alt=""></a></li>
+        <li class="redes-footer"><a class="redes-footer" href="https://www.instagram.com/deezer/?hl=es-la"><img class="redes-footer" src="img/instagram.png" alt=""></a></li>
+        <li class="redes-footer"><a class="redes-footer" href="https://www.facebook.com/DeezerLatino/?brand_redir=173259534981"><img class="redes-footer" src="img/facebook.png" alt=""></a></li>
         <li class="contenido-footer">Catalina Rosella</li>
         <li class="contenido-footer">Nataly Yemal</li>
         <li class="contenido-footer">Valentina Drechsler</li>
-          </ul>
-        </div>
-     </footer>
+        </ul>
+   </footer>
 
     <script src="todosArtistas.js"></script>
 </body>
