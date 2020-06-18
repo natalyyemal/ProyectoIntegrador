@@ -1,3 +1,45 @@
+// window.addEventListener('load', function() {
+
+//     let titulo = document.querySelector('.titulo');
+//     let saludo = document.querySelector('.saludo');
+//     let span = document.querySelector('span');
+//     let bienvenida = document.querySelector('.bienvenida');
+ 
+//     /* Evento para el título */
+//     titulo.onload = function() {
+//        let nombre = prompt('¿Cuál es tu nombre?');
+//        saludo.style.textTransform = 'uppercase';
+ 
+//        if(nombre == ''){
+//           //Saludo genérico
+//           saludo.innerHTML = "Bienvenido @";
+//        } else {
+//           //Saludo personalizado
+//           saludo.innerHTML = "Bienvenido @" + nombre;
+//        }
+ 
+//        titulo.style.display = 'none';
+//        span.style.display = 'inline';
+//     }
+
+let titulo = document.querySelector(".tituloPromt");
+let saludo = document.querySelector(".saludo");
+let bienvenida = document.querySelector(".bienvenida");
+
+titulo.onmouseover = function(){
+    let nombre = prompt("Bienvenid@ cómo te llamas?");
+    saludo.style.textTransform = "uppercase";
+    saludo.style.textTransform = "bold";
+    saludo.style.textAlign = "center";
+
+    if(nombre == ""){
+        saludo.innerHTML = "¡ Bienvenid@ al sitio !";
+    } else {
+        saludo.innerHTML = "¡ Bienvenido al sitio " + nombre + " !";
+    }
+    titulo.style.display = "none";
+}
+
 let slideIndex = 0;
 showSlides();
 function showSlides() {

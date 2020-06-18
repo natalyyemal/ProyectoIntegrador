@@ -171,8 +171,8 @@ footer .tracks{
     
 }
 .fin{
-    /* display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr; */
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr; 
     height: 70px;
     margin-bottom: 0;
     background-color: black;
@@ -244,11 +244,8 @@ footer .tracks{
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 50px;
         text-align: center;
-<<<<<<< HEAD
         padding-left: 4px;
         padding-right: 4px;
-=======
->>>>>>> 1f1050bb8e917064203cce4a46b0693448d66c56
     }
     .foto-bandas a{
         display: block;

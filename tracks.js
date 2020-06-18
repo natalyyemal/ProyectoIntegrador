@@ -76,6 +76,7 @@ let agregar = document.querySelector('.agregar');
 agregar.addEventListener('click', function(e){
     //Detener el comportamiento default de <a></a>
     e.preventDefault();
+    
 
     if(playlist.includes(idTrack)){
         //Si el track está tenemos que quitarlo.
@@ -83,11 +84,17 @@ agregar.addEventListener('click', function(e){
         playlist.splice(indiceEnElArray, 1);
         document.querySelector('.agregar').innerHTML = "Agregar a playlist";
         console.log(playlist);
-
+        agregar.onclick = function(){
+            alert("Has quitado exitosamente esta canción a tu playlist");
+        }
+    // agregar.style.display = "none";
     } else { 
         //Agrego el id del track a la lista
         playlist.push(idTrack);
         document.querySelector('.agregar').innerHTML = "Quitar de la playlist"
+        agregar.onclick = function(){
+            alert("Has agregado exitosamente esta canción de tu playlist");
+        }
     }
     //
 

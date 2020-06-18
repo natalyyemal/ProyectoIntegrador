@@ -1,0 +1,152 @@
+body{
+    font-family: sans-serif;
+    background-image: url("https://andro4all.com/files/2020/03/Luces-de-noche-700x1244.jpg");
+    background-repeat: repeat;
+    background-size: inherit;
+    background-attachment: fixed;
+  }
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: rgb(33, 44, 35);
+    color: white;
+    padding: 14px 20px;
+    margin-top: 6%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+  .container {
+    padding: 16px;
+  }
+  .cajaForm {
+    display: flex; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 79%; 
+    height: 347px; 
+    padding-top: 13%;
+    margin-left: 10%;
+  }
+  label p{
+    color: white;
+  }
+  .cajaContenidoForm {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 5% auto 15% auto;
+    width: 80%; 
+  }
+  i{
+    padding-right: 5%;
+  }
+  /*Aca empieza el loader*/
+  .loader-wrapper{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #131212;
+    display: flex;
+    justify-content: center;
+  }
+  .loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  top: 50%;
+  animation: loader 2s infinite ease;
+  }
+  .loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+  }
+  @keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  25% {
+    transform: rotate(180deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  75% {
+    transform: rotate(360deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+  }
+  @keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  
+  25% {
+    height: 0%;
+  }
+  
+  50% {
+    height: 100%;
+  }
+  
+  75% {
+    height: 100%;
+  }
+  
+  100% {
+    height: 0%;
+  }
+  }
+  .loader-wrapper.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+  /*Aca termina el loader*/
+  @media (min-width:375px){
+    .cajaForm{
+      width: 67%;
+      margin-left: 17%;
+    }
+  }
+  @media (min-width:768px){
+    .cajaForm{
+      width: 35%;
+      padding-top: 8%;
+      margin-left: 38%;
+    }
+  }
+  @media (min-width:1024px){
+    .cajaForm{
+      width: 24%;
+      height: 365px;
+    }
+  }

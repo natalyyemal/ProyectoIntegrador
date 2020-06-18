@@ -7,6 +7,26 @@
     <title>Login</title>
 </head>
 <body>
+    
+    <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<!-- forms -->
+    <div class="cajaForm">
+        <form class= "cajaContenidoForm" action="../home/index.html" method="post">
+            <div class="container">
+
+                <label for="user"><p><i class="far fa-user"></i>Usuario</p></label>
+                <input class= "user" type="text" placeholder="Ingresar Usuario" name="user" required>
+
+                <label for="pass"><p><i class="fas fa-lock"></i>Contraseña</p></label>
+                <input type="password" placeholder="Ingresar Contraseña" name="pass" required>
+        
+                <button class="boton" type="submit">INICIAR sesion</button>
+            </div>
+        </form>
+    </div>
   
 </body>
 </html>
