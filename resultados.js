@@ -39,7 +39,7 @@ let urltracks = proxy + 'https://api.deezer.com/search/' + option + '?q=' + sear
                 if (option == 'track'){
                     resultados.forEach(resultado => { 
                         
-                        lista.innerHTML += '<li class= "resultados">' + '<a href="tracks.html?id="' + resultado.id + '&type='+ resultado.type + '" class="a-song">' + resultado.title + '</a></li>';
+                        lista.innerHTML += '<li class= "resultados">' + '<a href="tracks.html?id=' + resultado.id + '" &type='+ resultado.type + '" class="a-song">' + resultado.title + '</a></li>';
                         console.log(resultado)
                     });
                 }
@@ -48,7 +48,7 @@ let urltracks = proxy + 'https://api.deezer.com/search/' + option + '?q=' + sear
                         resultados.forEach(resultado => {
                             
 
-                            lista.innerHTML += '<li class="resultados">' + '<a href="albums.html?id="' + resultado.id + '&type='+ resultado.type + '" class="a-song">' + resultado.title + '</a></li>';
+                            lista.innerHTML += '<li class="resultados">' + '<a href="albums.html?id=' + resultado.id + '" &type='+ resultado.type + '" class="a-song">' + resultado.title + '</a></li>';
                         });
                     });
                 }
@@ -56,7 +56,7 @@ let urltracks = proxy + 'https://api.deezer.com/search/' + option + '?q=' + sear
                     resultados.forEach(resultado => {
                         
 
-                        lista.innerHTML += '<li class= "resultados">' + '<a href="detail.html?id="' + resultado.id + '&type='+ resultado.type + '" class="a-song">' + resultado.name + '</a></li>';
+                        lista.innerHTML += '<li class= "resultados">' + '<a href="detail.html?id=' + resultado.id + '" &type='+ resultado.type + '" class="a-song">' + resultado.name + '</a></li>';
                     });
                 }
                 
