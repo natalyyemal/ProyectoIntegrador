@@ -136,6 +136,7 @@ li .todos{
     margin-top: 10px;
     padding: 10px;
     background-color: none;
+    gap: 15px;
 }
 footer .tracks{
     width: 95%;
@@ -173,12 +174,11 @@ footer .tracks{
 .fin{
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr; 
-    height: 70px;
     margin-bottom: 0;
     background-color: black;
     border-radius: 20px;
-
 }
+
 .futer{
     display: grid;
     grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
@@ -378,6 +378,9 @@ footer .tracks{
         width: 100%;
         margin-bottom: 10px;
         margin: auto;
+    }
+    .fin{
+        grid-template-columns: 1fr;
     }
  
 }

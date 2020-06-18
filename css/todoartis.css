@@ -286,7 +286,10 @@ body{
   .fotos:hover .overlay {
     opacity: 1;
     border-radius: 5px;
-    
+  }
+
+  .fotos a{
+      text-decoration: none;
   }
 @media(max-width: 768px){
     .descripcion{
