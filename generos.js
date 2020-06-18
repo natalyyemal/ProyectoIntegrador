@@ -37,8 +37,8 @@ fetch(url)
     for(let i=0; i<9; i++){
       albums += '<div class="fotos">'; 
       albums += '<a href= "detail.html?id=' + nom[i].id + '">'; 
-      albums += '<img src="' + nom[i].picture + '" alt="' + nom[i].name + '">';
-      albums += '<li class= nombres>' + nom[i].name + '</li></a>';
+      albums += '<img class= "image" src="' + nom[i].picture + '" alt="' + nom[i].name + '">';
+      albums += '<li class= overlay>' + nom[i].name + '</li></a>';
       albums += '</div>';
     }
 

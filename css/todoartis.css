@@ -43,6 +43,14 @@ body{
     top: 30%;
     left: 2%;
 }
+.fotobandas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.trackschart{
+    list-style: none;
+    text-decoration: none;
+}
 .weeknd{
     width: 100%;
     top: 0px;
@@ -128,6 +136,10 @@ body{
     
     padding-top: 3%;
 }
+/* .fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+} */
 .albumes{
     width: 100%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.644);
@@ -213,6 +225,69 @@ body{
     margin-left: 15%;
 
 }
+.fotulis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+ /* .trackschart img{
+    width: 200px;
+}  */
+.trackschart a{
+    text-decoration: none;
+    color: black;
+} 
+.trackschart{
+    margin: auto;
+}
+.fotos{
+    margin: auto;
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    padding-bottom: 2%;
+}
+.trackschart{
+    position: relative;
+    width: 50%;
+    max-width: 300px;
+    padding-bottom: 2%;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* The overlay effect - lays on top of the container and over the image */
+  .overlay {
+    /* position: absolute; */
+    /* bottom: -20%; */
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    /* transition: .5s ease; */
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    /* padding: 20px; */
+    text-align: center;
+    list-style: none;
+  }
+  
+  /* When you mouse over the container, fade in the overlay title */
+  .trackschart:hover .overlay {
+    opacity: 1;
+    border-radius: 5px;
+    
+  }
+  .fotos:hover .overlay {
+    opacity: 1;
+    border-radius: 5px;
+    
+  }
 @media(max-width: 768px){
     .descripcion{
         display: none;
@@ -220,14 +295,14 @@ body{
     .tablet{
         background-color: blanchedalmond;
     }
-    .twitter{
+    /* .twitter{
         top: 62%;
         left: 74%;
     }
     .instagram{
         top: 62%;
         left: 70%;
-    }
+    } */
     .titulo{
         font-size: 30px;
         top: 45%;
@@ -246,6 +321,19 @@ body{
     .buscar{
         width: auto;
     }
+    .overlay{
+        opacity: 100%;
+        background-color: none;
+        background: none;
+    }
+    /* .fotoban{
+        margin: 0;
+        justify-self: start;
+    } */
+    .trackschart{
+        margin: 10%;
+        width: 100%;
+    }
 }
 @media (max-width: 654px){
     .grid-container ul{
@@ -263,14 +351,44 @@ body{
     .tablet{
         display: none;
     }
-    .twitter{
+    /* .twitter{
         display: none;
     }
     .instagram{
         display: none;
-    }
+    } */
     .titulo{
         top: 70%;
+    }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .fotito{
+        margin-left: 20%;
+    }
+    .fotulis{
+        grid-template-columns: 1fr 1fr;
+    }
+    .trackschart{
+        margin: auto;
+    }
+}
+@media (max-width: 600px){
+    .fotulis{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 425px){
+    .foto-bandas{
+        grid-template-columns: 1fr;
+    }
+    .fin{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .fotulis{
+        grid-template-columns: 1fr;
     }
 }
 @media (max-width: 320px){
@@ -325,8 +443,5 @@ body{
     .fotito{
         margin-left: 10%;
     }
-    .fin{
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+    
 }

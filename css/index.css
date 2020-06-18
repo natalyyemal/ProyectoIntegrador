@@ -168,12 +168,20 @@ footer .tracks{
     width: 95%;
     margin: auto;
     border-radius: 20px;
+    
 }
 .fin{
-    display: grid;
-    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr; */
     height: 70px;
     margin-bottom: 0;
+    background-color: black;
+    border-radius: 20px;
+
+}
+.futer{
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.3fr 0.3fr 1fr 1fr 1fr;
 }
 .contenido-footer{
     color: white;
@@ -236,21 +244,27 @@ footer .tracks{
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 50px;
         text-align: center;
+<<<<<<< HEAD
         padding-left: 4px;
         padding-right: 4px;
+=======
+>>>>>>> 1f1050bb8e917064203cce4a46b0693448d66c56
     }
     .foto-bandas a{
         display: block;
+        padding: 3%;
     }
     .foto-bandas a img{
         width: 50%;
     }
     .todos{
         display: none;
-    }   
+    }
+   
     .fin{
         font-size: 10px;
-        grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr;
+        /* grid-template-columns: 0.2fr 0.5fr 0.5fr 0.5fr 1fr 1fr 1fr; */
+        
     }
     .boton-buscador{
         width: auto;
@@ -299,7 +313,17 @@ footer .tracks{
      }
      .futer{
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        background-color: black;
+        /* overflow: auto; */
+        margin-bottom: 10%
+    }
+    .futer{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .logoDeezer{
+        padding-left: none;
     }
 }
 @media (max-width: 453px){
@@ -358,6 +382,7 @@ footer .tracks{
         margin-bottom: 10px;
         margin: auto;
     }
+ 
 }
 /* @media (max-width: 320px){
     .footer{
