@@ -45,11 +45,11 @@ let urltracks = proxy + 'https://api.deezer.com/search/' + option + '?q=' + sear
                 }
                 if (option == "album"){
                     resultados.forEach(resultado => { 
-                        resultados.forEach(resultado => {
+                        
                             
 
                             lista.innerHTML += '<li class="resultados">' + '<a href="albums.html?id=' + resultado.id + '" &type='+ resultado.type + '" class="a-song">' + resultado.title + '</a></li>';
-                        });
+                        
                     });
                 }
                 if (option == "artist") {
