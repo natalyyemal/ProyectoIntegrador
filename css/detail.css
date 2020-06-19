@@ -271,9 +271,7 @@ body{
         left: 70%;
     }
     .titulo{
-        font-size: 30px;
-        top: 45%;
-        left: 3%;
+        display: none;
     }
     .weeknd{
         width: 100%;
@@ -331,6 +329,11 @@ body{
     } 
     .contenido-footer{
         font-size: 20px;
+    }
+}
+@media (max-width: 375px){
+    .botonsitos button{
+        font-size: 12px;
     }
 }
 @media (max-width: 320px){
